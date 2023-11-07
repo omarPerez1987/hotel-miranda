@@ -1,0 +1,50 @@
+.check {
+  padding: 2.25em 0em 2.25em 1.25em;
+  display: flex;
+  flex-direction: column;
+  width: 23.4em;
+  height: 22.1em;
+  background: #222;
+  max-width: 100%;
+  gap: 1.87em;
+}
+
+.check__arrival, .check__departure {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  border-bottom: 1px solid #BEAD8E;
+}
+
+.check__arrival__text,
+.check__departure__text {
+  margin-bottom: 24px;
+  color: #fff;
+  font-family: $third-font;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.check__input__box {
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.2em;
+  font-size: 1.2em;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  color: #BEAD8E;
+  width: 90%;
+}
+
+.check__input__box::-webkit-calendar-picker-indicator {
+  filter: invert(100%) sepia(90%) saturate(1000%) hue-rotate(0deg) brightness(95%) contrast(30%);
+}
+
+
+.check__button {
+  margin-top: 12px;
+}

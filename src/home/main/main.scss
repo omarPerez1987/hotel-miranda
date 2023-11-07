@@ -1,0 +1,65 @@
+.main {
+  max-width: 100%;
+  height: 33.2em;
+  background: #333;
+  padding-left: 1.25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.main__subtitle {
+  width: 14.8em;
+  color: #fff;
+  font-family: $secondary-font;
+  font-size: 0.8em;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.main__title {
+  color: #fff;
+  font-family: $primary-font;
+  font-size: 3.5em;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -1.2px;
+}
+
+.main__box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+.main__box__button-beige {
+  width: 13.5em;
+  height: 3.75em;
+  background: #bead8e;
+  border: none;
+  color: #fff;
+  font-family: $secondary-font;
+  font-size: 0.88em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.main__box__button-black {
+  width: 13.5em;
+  height: 3.75em;
+  border: 2px solid rgba(255, 255, 255, 0.33);
+  background: transparent;
+  color: #fff;
+  font-family: $secondary-font;
+  font-size: 0.88em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
