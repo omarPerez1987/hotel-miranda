@@ -2,19 +2,22 @@
   padding: 2.25em 0em 2.25em 1.25em;
   display: flex;
   flex-direction: column;
-  width: 23.4em;
+  justify-content: space-evenly;
+  max-width: 100%;
   height: 22.1em;
   background: #222;
   max-width: 100%;
   gap: 1.87em;
 }
 
-.check__arrival, .check__departure {
+.check__arrival,
+.check__departure {
   width: 90%;
+  max-width: 20.9em;
   display: flex;
   flex-direction: column;
   justify-content: baseline;
-  border-bottom: 1px solid #BEAD8E;
+  border-bottom: 1px solid #bead8e;
 }
 
 .check__arrival__text,
@@ -36,15 +39,25 @@
   border: none;
   outline: none;
   background: none;
-  color: #BEAD8E;
+  color: #bead8e;
   width: 90%;
 }
 
 .check__input__box::-webkit-calendar-picker-indicator {
-  filter: invert(100%) sepia(90%) saturate(1000%) hue-rotate(0deg) brightness(95%) contrast(30%);
+  filter: invert(100%) sepia(90%) saturate(1000%) brightness(95%) contrast(30%);
 }
 
-
 .check__button {
-  margin-top: 12px;
+  margin-top: 0.75em;
+  width: 15.6em;
+  height: 3.75em;
+  background-color: #bead8e;
+  color: #fff;
+  font-family: $secondary-font;
+  font-size: 0.85em;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
 }

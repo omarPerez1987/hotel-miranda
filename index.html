@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/rooms-swiper@11/rooms-swiper-bundle.min.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,7 +22,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
     <title>Hotel Miranda</title>
   </head>
   <body>
@@ -46,9 +46,14 @@
         </navbar>
 
         <div class="header__icons">
-          <img src="./public/icons/user.png" class="header__icons__icon" />
-
-          <img src="./public/icons/search.png" class="header__icons__icon" />
+          <img
+            src="./public/icons/home/header/user.png"
+            class="header__icons__icon"
+          />
+          <img
+            src="./public/icons/home/header/search.png"
+            class="header__icons__icon"
+          />
         </div>
       </header>
     </section>
@@ -63,32 +68,183 @@
     </main>
 
     <section class="check">
-        <div class="check__arrival">
-          <label class="check__arrival__text">Arrival Date</label>
-          <div class="check__arrival__input">
-            <input class="check__input__box" placeholder="24th march 2020" type="date"></input>
-          </div>
+      <div class="check__arrival">
+        <label class="check__arrival__text">Arrival Date</label>
+        <div class="check__arrival__input">
+          <input
+            class="check__input__box"
+            placeholder="24th march 2020"
+            type="date"
+          />
         </div>
+      </div>
 
-        <div class="check__departure">
-          <label class="check__departure__text">LeDeparture Date</label>
-          <div class="check__departure__input">
-            <input class="check__input__box" placeholder="30th march 2020" type="date"></input>
-          </div>
+      <div class="check__departure">
+        <label class="check__departure__text">LeDeparture Date</label>
+        <div class="check__departure__input">
+          <input
+            class="check__input__box"
+            placeholder="30th march 2020"
+            type="date"
+          />
         </div>
+      </div>
       <button class="check__button">CHECK AVAILABILITY</button>
     </section>
 
+    <section class="about">
+      <article class="about__container">
+        <h3 class="about__container__subtitle">ABOUT US</h3>
+        <div class="about__container__text">
+          <h1 class="about__container__text__title">
+            Discover Our Underground.
+          </h1>
+          <p class="about__container__text__paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <button class="about__container__text__button">BOOK NOW</button>
+        </div>
+      </article>
 
+      <article class="about__team">
+        <img
+          class="about__team__image"
+          src="./public/images/about/pexels-oleksandr-p-2100804.jpg"
+          alt=""
+        />
+        <div class="about__team__text">
+          <img
+            src="./public/icons/home/about/svg-gobbler.png"
+            alt="logo team"
+          />
+          <h4 class="about__team__text__title">Strong Team</h4>
+          <p class="about__team__text__paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor.
+          </p>
+        </div>
+      </article>
 
+      <article class="about__luxury">
+        <img
+          class="about__luxury__image"
+          src="./public/images/about/pexels-michael-block-3225531.jpg"
+          alt=""
+        />
+        <div class="about__luxury__text">
+          <img
+            src="./public/icons/home/about/svg-luxury.png"
+            alt="logo luxury"
+          />
+          <h4 class="about__luxury__text__title">Luxury Room</h4>
+          <p class="about__luxury__text__paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor.
+          </p>
+        </div>
+      </article>
+    </section>
 
+    <section class="rooms">
+      <h5 class="rooms__subtitle">Rooms</h5>
+      <h1 class="rooms__title">Hand Picked Rooms</h1>
+      <div class="rooms__container">
+        <img
+          src="./public/icons/home/rooms/bed.svg"
+          alt="icon bed"
+          class="romms__container__icons"
+        />
+        <img
+          src="./public/icons/home/rooms/wifi.svg"
+          alt="icon wifi"
+          class="romms__container__icons"
+        />
+        <img
+          src="./public/icons/home/rooms/car.svg"
+          alt="icon parking"
+          class="romms__container__icons"
+        />
+        <img
+          src="./public/icons/home/rooms/cold.svg"
+          alt="icon cold"
+          class="romms__container__icons"
+        />
+        <img
+          src="./public/icons/home/rooms/gym.svg"
+          alt="icon gym"
+          class="romms__container__icons"
+        />
+        <img
+          src="./public/icons/home/rooms/smoking.svg"
+          alt="icon no smoke"
+          class="romms__container__icons"
+        />
+        <img
+          src="./public/icons/home/rooms/bar.svg"
+          alt="icon bar"
+          class="romms__container__icons"
+        />
+      </div>
 
+      <article class="rooms-swiper">
+        <div class="rooms-swiper__wrapper">
+          <div class="rooms-swiper__wrapper__slide">
+            <img
+              src="./images/room1.jpg"
+              alt=""
+              class="rooms-swiper__wrapper__slide__image"
+            />
+          </div>
+          <div class="rooms-swiper__wrapper__slide">
+            <img
+              src="./images/room2.jpg"
+              alt=""
+              class="rooms-swiper__wrapper__slide__image"
+            />
+          </div>
+          <div class="rooms-swiper__wrapper__slide">
+            <img
+              src="./images/room3.jpg"
+              alt=""
+              class="rooms-swiper__wrapper__slide__image"
+            />
+          </div>
+          <div class="rooms-swiper__wrapper__slide">
+            <img
+              src="./images/room4.jpg"
+              alt=""
+              class="rooms-swiper__wrapper__slide__image"
+            />
+          </div>
+        </div>
+        <button class="rooms-swiper-button-prev">
+          <i class="bx bx-chevron-left"></i>
+        </button>
+        <button class="rooms-swiper-button-next">
+          <i class="bx bx-chevron-right" style="color: #ffffff"></i>
+        </button>
+      </article>
 
+      <div class="rooms__info">
+        <div class="rooms__info__firstbox">
+          <h2 class="rooms__info__title">Minimal Duplex Room</h2>
+          <p class="rooms__info__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore.
+          </p>
+        </div>
+        <div class="rooms__info__secondbox">
+          <p class="rooms__info__price">
+            $345<span class="rooms__info__night">/Night</span>
+          </p>
+        </div>
+      </div>
+    </section>
 
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/rooms-swiper@11/rooms-swiper-bundle.min.js"></script>
     <script type="module" src="./app.js"></script>
   </body>
 </html>

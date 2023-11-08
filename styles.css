@@ -1,135 +1,10 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+* {
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
 }
 
 a {
   text-decoration: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
 }
 
 .header-section {
@@ -220,7 +95,7 @@ table {
 .main {
   max-width: 100%;
   height: 33.2em;
-  background: #333;
+  background: url("../../../public/images/main/pexels-colon-freld-2373201.jpg") no-repeat center center/cover;
   padding-left: 1.25em;
   display: flex;
   flex-direction: column;
@@ -287,19 +162,22 @@ table {
   padding: 2.25em 0em 2.25em 1.25em;
   display: flex;
   flex-direction: column;
-  width: 23.4em;
+  justify-content: space-evenly;
+  max-width: 100%;
   height: 22.1em;
   background: #222;
   max-width: 100%;
   gap: 1.87em;
 }
 
-.check__arrival, .check__departure {
+.check__arrival,
+.check__departure {
   width: 90%;
+  max-width: 20.9em;
   display: flex;
   flex-direction: column;
   justify-content: baseline;
-  border-bottom: 1px solid #BEAD8E;
+  border-bottom: 1px solid #bead8e;
 }
 
 .check__arrival__text,
@@ -323,14 +201,320 @@ table {
   border: none;
   outline: none;
   background: none;
-  color: #BEAD8E;
+  color: #bead8e;
   width: 90%;
 }
 
 .check__input__box::-webkit-calendar-picker-indicator {
-  filter: invert(100%) sepia(90%) saturate(1000%) hue-rotate(0deg) brightness(95%) contrast(30%);
+  filter: invert(100%) sepia(90%) saturate(1000%) brightness(95%) contrast(30%);
 }
 
 .check__button {
-  margin-top: 12px;
+  margin-top: 0.75em;
+  width: 15.6em;
+  height: 3.75em;
+  background-color: #bead8e;
+  color: #fff;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.85em;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.about {
+  max-width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__container {
+  margin-top: 3.75em;
+  background: url("../../../public/images/about/pexels-mikhail-nilov-6707630.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 38.1em;
+  padding-top: 2.37em;
+  box-shadow: inset 0px 350px 100px -10px #fff;
+}
+
+.about__container__subtitle {
+  width: 90%;
+  color: #777;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.81em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  margin-left: 20px;
+}
+
+.about__container__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  width: 89%;
+  margin-left: 20px;
+}
+
+.about__container__text__title {
+  color: #111;
+  font-family: "Old Standard TT", serif;
+  font-size: 3.3em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+}
+
+.about__container__text__paragraph {
+  color: #777;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.87em;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.about__container__text__button {
+  width: 13.5em;
+  height: 3.75em;
+  background: #bdac8d;
+  border: none;
+  color: #fff;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.87em;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.about__team {
+  margin-top: -9.37em;
+  text-align: center;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__team__image {
+  width: 100%;
+  max-width: 16.8em;
+  height: 18.7em;
+}
+
+.about__team__text {
+  margin-top: -0.2em;
+  max-width: 16.8em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8em;
+  padding-top: 3.37em;
+}
+
+.about__team__text__title {
+  color: #111;
+  font-family: "Old Standard TT", serif;
+  font-size: 1.8em;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.9px;
+}
+
+.about__team__text__paragraph {
+  width: 14em;
+  color: #111;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.about__luxury {
+  margin-top: 2.8em;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__luxury__image {
+  width: 100%;
+  max-width: 16.8em;
+  height: 18.7em;
+}
+
+.about__luxury__text {
+  margin-top: -0.2em;
+  width: 100%;
+  max-width: 16.8em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8em;
+  padding-top: 3.37em;
+  background: #222;
+}
+
+.about__luxury__text__title {
+  color: #fff;
+  font-family: "Old Standard TT", serif;
+  font-size: 1.8em;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.9px;
+}
+
+.about__luxury__text__paragraph {
+  width: 14em;
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  padding-bottom: 2.5em;
+}
+
+.rooms {
+  margin-top: 3.75em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rooms__subtitle {
+  color: #777;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.87em;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+}
+
+.rooms__title {
+  margin-top: 24px;
+  width: 100%;
+  max-width: 41.25em;
+  color: #222;
+  text-align: center;
+  font-family: "Old Standard TT", serif;
+  font-size: 4em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 80px;
+  letter-spacing: -2.4px;
+}
+
+.rooms__container {
+  z-index: 0;
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  background: #fff;
+  width: 16em;
+  height: 2.5em;
+}
+
+.rooms-swiper__wrapper {
+  margin-top: -12px;
+  width: 375px;
+  height: 244px;
+  flex-shrink: 0;
+  background: #e5e5e5;
+}
+
+.rooms-swiper-button-prev {
+  position: relative;
+  top: -135px;
+  left: 12px;
+  width: 2em;
+  height: 2em;
+  flex-shrink: 0;
+  font-size: medium;
+  font-weight: 400;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.rooms-swiper-button-next {
+  position: relative;
+  top: -135px;
+  left: 293px;
+  margin-top: -117px;
+  width: 2em;
+  height: 2em;
+  flex-shrink: 0;
+  font-size: medium;
+  font-weight: 400;
+  color: #fff;
+  background: #bdac8d;
+  border: none;
+  cursor: pointer;
+}
+
+.rooms__info {
+  background: #fff;
+  margin-top: -50px;
+  width: 90%;
+  text-align: center;
+  z-index: 0;
+}
+
+.rooms__info__title {
+  margin-top: 1.18em;
+  color: #222;
+  font-family: "Old Standard TT", serif;
+  font-size: 1.75em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -1.2px;
+}
+
+.rooms__info__text {
+  margin: 0.75em 0em;
+  width: 90%;
+  color: #777;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.87em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.rooms__info__price {
+  color: #bead8e;
+  text-align: center;
+  font-family: "Archivo", sans-serif;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 43px;
+}
+
+.rooms__info__price span {
+  color: #bead8e;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.4em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 43px;
 }/*# sourceMappingURL=styles.css.map */
