@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/rooms-swiper@11/rooms-swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -189,44 +189,26 @@
         />
       </div>
 
-      <article class="rooms-swiper">
-        <div class="rooms-swiper__wrapper">
-          <div class="rooms-swiper__wrapper__slide">
-            <img
-              src="./images/room1.jpg"
-              alt=""
-              class="rooms-swiper__wrapper__slide__image"
-            />
-          </div>
-          <div class="rooms-swiper__wrapper__slide">
-            <img
-              src="./images/room2.jpg"
-              alt=""
-              class="rooms-swiper__wrapper__slide__image"
-            />
-          </div>
-          <div class="rooms-swiper__wrapper__slide">
-            <img
-              src="./images/room3.jpg"
-              alt=""
-              class="rooms-swiper__wrapper__slide__image"
-            />
-          </div>
-          <div class="rooms-swiper__wrapper__slide">
-            <img
-              src="./images/room4.jpg"
-              alt=""
-              class="rooms-swiper__wrapper__slide__image"
-            />
-          </div>
+
+
+
+      <!-- Swiper -->
+      <article class="swiper" id="mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./public/images/slide/pexels-jason-boyd-3209049.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./public/images/slide/pexels-max-rahubovskiy-6186815.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./public/images/slide/pexels-max-rahubovskiy-6480198.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./public/images/slide/pexels-max-rahubovskiy-6585619.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./public/images/slide/pexels-max-rahubovskiy-6587825.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./public/images/slide/pexels-max-rahubovskiy-6782472.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./public/images/slide/pexels-max-rahubovskiy-6782567.jpg" alt=""></div>
         </div>
-        <button class="rooms-swiper-button-prev">
-          <i class="bx bx-chevron-left"></i>
-        </button>
-        <button class="rooms-swiper-button-next">
-          <i class="bx bx-chevron-right" style="color: #ffffff"></i>
-        </button>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </article>
+
+
+
 
       <div class="rooms__info">
         <div class="rooms__info__firstbox">
@@ -244,7 +226,7 @@
       </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/rooms-swiper@11/rooms-swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="./app.js"></script>
   </body>
 </html>

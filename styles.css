@@ -420,7 +420,7 @@ a {
 }
 
 .rooms__container {
-  z-index: 0;
+  z-index: 1;
   margin-top: 24px;
   display: flex;
   justify-content: center;
@@ -431,50 +431,67 @@ a {
   height: 2.5em;
 }
 
-.rooms-swiper__wrapper {
-  margin-top: -12px;
-  width: 375px;
-  height: 244px;
-  flex-shrink: 0;
-  background: #e5e5e5;
+.swiper {
+  margin-top: -20px;
+  width: 100%;
+  height: auto;
+  z-index: 0;
 }
 
-.rooms-swiper-button-prev {
-  position: relative;
-  top: -135px;
-  left: 12px;
-  width: 2em;
-  height: 2em;
-  flex-shrink: 0;
-  font-size: medium;
-  font-weight: 400;
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
   background: #fff;
-  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 23.4em;
+  max-width: 48.1em;
+  height: 15.25em;
+  max-height: 31.2em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-button-prev {
+  width: 32px;
+  height: 32px;
+  background: #fff;
   cursor: pointer;
 }
 
-.rooms-swiper-button-next {
-  position: relative;
-  top: -135px;
-  left: 293px;
-  margin-top: -117px;
-  width: 2em;
-  height: 2em;
+.swiper-button-prev::after {
+  font-size: 9.6px;
   flex-shrink: 0;
-  font-size: medium;
-  font-weight: 400;
-  color: #fff;
+  color: #111111;
+}
+
+.swiper-button-next {
+  width: 32px;
+  height: 32px;
   background: #bdac8d;
-  border: none;
   cursor: pointer;
+}
+
+.swiper-button-next::after {
+  font-size: 9.6px;
+  flex-shrink: 0;
+  color: #FFFFFF;
 }
 
 .rooms__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: #fff;
-  margin-top: -50px;
+  margin-top: -12px;
   width: 90%;
   text-align: center;
-  z-index: 0;
+  z-index: 1;
 }
 
 .rooms__info__title {
@@ -491,6 +508,7 @@ a {
 .rooms__info__text {
   margin: 0.75em 0em;
   width: 90%;
+  max-width: 437px;
   color: #777;
   text-align: center;
   font-family: "Roboto", sans-serif;
