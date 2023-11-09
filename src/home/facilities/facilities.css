@@ -1,0 +1,34 @@
+.facilities-swiper {
+  width: 100%;
+  position: relative;
+}
+
+.facilities-swiper__wrapper__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 35px;
+}
+
+.facilities-swiper__wrapper__slide-number {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: rgba(34, 34, 34, 0.04);
+  font-family: Archivo;
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130px;
+}
+
+.facilities-swiper__wrapper__slide-img {
+  margin-top: 81px;
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+}
+
+.facilities-swiper__wrapper__slide-title {
+  margin-top: 38px;
+}/*# sourceMappingURL=facilities.css.map */

@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+:root {
+  font-size: 16px;
+}
+
 a {
   text-decoration: none;
 }
@@ -431,14 +435,14 @@ a {
   height: 2.5em;
 }
 
-.swiper {
+.rooms-swiper {
   margin-top: -20px;
   width: 100%;
   height: auto;
   z-index: 0;
 }
 
-.swiper-slide {
+.rooms-swiper__wrapper__slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -447,48 +451,46 @@ a {
   align-items: center;
 }
 
-.swiper-slide img {
+.rooms-swiper__wrapper__slide img {
   display: block;
-  width: 23.4em;
-  max-width: 48.1em;
-  height: 15.25em;
-  max-height: 31.2em;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.swiper-button-prev {
+.rooms-swiper__button-prev {
   width: 32px;
   height: 32px;
   background: #fff;
   cursor: pointer;
 }
 
-.swiper-button-prev::after {
+.rooms-swiper__button-prev::after {
   font-size: 9.6px;
   flex-shrink: 0;
   color: #111111;
 }
 
-.swiper-button-next {
+.rooms-swiper__button-next {
   width: 32px;
   height: 32px;
   background: #bdac8d;
   cursor: pointer;
 }
 
-.swiper-button-next::after {
+.rooms-swiper__button-next::after {
   font-size: 9.6px;
   flex-shrink: 0;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .rooms__info {
+  margin-top: -25px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #fff;
-  margin-top: -12px;
   width: 90%;
   text-align: center;
   z-index: 1;
@@ -535,4 +537,166 @@ a {
   font-style: normal;
   font-weight: 700;
   line-height: 43px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .rooms-swiper__slide {
+    width: 48.1em;
+  }
+}
+.intro-video {
+  padding: 4em 0em 3em 0em;
+  width: 100%;
+  height: auto;
+  background: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro-video__box {
+  width: 90%;
+}
+
+.intro-video__box-subtitle {
+  color: #bdac8d;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  margin-bottom: 2em;
+}
+
+.intro-video__box-title {
+  color: #fff;
+  font-family: "Old Standard TT", serif;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  margin-bottom: 0.3em;
+}
+
+.intro-video__box-text {
+  color: #c2c2c2;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 2em;
+}
+
+.intro-video__box-frame {
+  height: 270px;
+  width: 100%;
+  margin-bottom: 2.2em;
+}
+
+.intro-video__box-button {
+  width: 13.5em;
+  height: 3.75em;
+  flex-shrink: 0;
+  background: #bdac8d;
+  color: #fff;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+}
+
+.facilities-swiper {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding-bottom: 2.6em;
+}
+
+.facilities-swiper__subtitle {
+  margin-top: 3.2em;
+  color: #777;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+}
+
+.facilities-swiper__title {
+  margin: 0.5em 0em;
+  color: #222;
+  font-family: "Old Standard TT", serif;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+}
+
+.facilities-swiper__wrapper__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.facilities-swiper__wrapper__slide-number {
+  position: absolute;
+  top: 0;
+  right: 32px;
+  color: rgba(34, 34, 34, 0.04);
+  font-family: "Archivo", sans-serif;
+  font-size: 7.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130px;
+  margin-left: 2.4em;
+}
+
+.facilities-swiper__wrapper__slide-img {
+  margin-left: 2.4em;
+  margin-top: 5em;
+  width: 4.3em;
+  height: 4.3em;
+  flex-shrink: 0;
+}
+
+.facilities-swiper__wrapper__slide-title {
+  margin: 1.5em 0px 1.5em 1.2em;
+  color: #222;
+  font-family: "Old Standard TT", serif;
+  font-size: 1.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.9px;
+}
+
+.facilities-swiper__wrapper__slide-text {
+  margin-left: 2.5em;
+  width: 250px;
+  text-align: start;
+  color: #777;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.swiper-pagination-bullet-active {
+  --swiper-pagination-color: #BEAD8E;
+}
+
+@media only screen and (min-width: 1000px) {
+  .facilities-swiper {
+    max-width: 1188px;
+    max-height: 910.84px;
+    flex-shrink: 0;
+  }
 }/*# sourceMappingURL=styles.css.map */
