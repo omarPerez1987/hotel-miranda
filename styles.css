@@ -1121,7 +1121,7 @@ ul {
   height: auto;
   position: relative;
   text-align: center;
-  padding-bottom: 4.5em;
+  padding-bottom: 2em;
   background: #222;
 }
 
@@ -1154,6 +1154,7 @@ ul {
   align-items: start;
   padding-bottom: 2.75em;
   background: #292929;
+  margin-bottom: 3em;
 }
 
 .facilities-swiper-about__wrapper__slide-number {
@@ -1289,6 +1290,7 @@ ul {
 .counter-about-swiper__slide {
   width: 335px;
   height: 230.033px;
+  margin-bottom: 2em;
 }
 
 .counter-about-swiper__slide img {
