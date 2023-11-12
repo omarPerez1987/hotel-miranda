@@ -75,3 +75,19 @@ const swiperMenuPhotos = new Swiper ("#menu-photos",{
     }
   },
 })
+
+const swiperAboutCounter = new Swiper("#swiper-about", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".counter-about-swiper__pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    1000: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+  },
+});
