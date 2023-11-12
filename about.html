@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800;900&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://png.pngtree.com/element_our/png_detail/20181207/creative-hotel-icon-background-png_263993.jpg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Hotel Miranda</title>
+  </head>
+
+  <body>
+    <section class="header-section">
+      <header class="header">
+        <div class="header__left">
+          <button class="header__left__menu">
+            <i class="bx bx-menu"></i>
+          </button>
+          <a href="./index.html" class="header__left__logo">
+            <h1 class="header__left__logo__H">H</h1>
+            <h1 class="header__left__logo__name">Hotel Miranda</h1>
+          </a>
+        </div>
+
+        <navbar class="navbar__list" id="navbar" style="display: none">
+          <a href="./about.html" class="navbar__list__links">About Us</a>
+          <a href="rooms.html" class="navbar__list__links">Rooms</a>
+          <a href="offers.html" class="navbar__list__links">Offers</a>
+          <a href="details.html" class="navbar__list__links">Contact</a>
+        </navbar>
+
+        <div class="header__icons">
+          <img
+            src="./public/icons/header/user.png"
+            class="header__icons__icon"
+          />
+          <img
+            src="./public/icons/header/search.png"
+            class="header__icons__icon"
+          />
+        </div>
+      </header>
+    </section>
+
+    <section class="main-about">
+      <h3 class="main-about-subtitle">THE ULTIMATE LUXURY</h3>
+      <h1 class="main-about-title">About Us</h1>
+      <img
+        class="main-about-img"
+        src="./public/images/about/pexels-mikhail-nilov-7820327.jpg"
+        alt=""
+      />
+      <div class="main-about-box">
+        <p class="main-about-box__home" href="">Home | <span>About</span></p>
+      </div>
+    </section>
+
+    <section class="intro-about">
+      <iframe
+        class="intro-about-iframe"
+        width="1170"
+        height="650"
+        src="https://www.youtube.com/embed/QDTf_shOqF4"
+        title="Four Seasons Bali at Sayan - A Luxury Resort In Paradise"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <h4 class="intro-about-text">
+        Hello. Our hotel has been present for over 20 years. We make the best
+        for all our customers.
+      </h4>
+      <article class="intro-about-box">
+        <div class="intro-about-box__icons">
+          <img src="./public/icons/about/breakfast.svg" alt="" />
+          <p>Breakfast</p>
+        </div>
+        <div class="intro-about-box__icons icon-airport">
+          <img src="./public/icons/about/airport.png" alt="" />
+          <p>Airport Pickup</p>
+        </div>
+        <div class="intro-about-box__icons">
+          <img src="./public/icons/about/city.svg" alt="" />
+          <p>City Guide</p>
+        </div>
+        <div class="intro-about-box__icons icon-bbq">
+          <img src="./public/icons/about/bbq.svg" alt="" />
+          <p>BBQ Party</p>
+        </div>
+        <div class="intro-about-box__icons">
+          <img src="./public/icons/about/room.svg" alt="" />
+          <p>Luxury Room</p>
+        </div>
+      </article>
+      <article class="restaurant-about">
+        <img
+          class="restaurant-about__image"
+          src="./public/images/about/pexels-rachel-claire-6126306.jpg"
+          alt=""
+        />
+        <div class="restaurant-about__box">
+          <h3 class="restaurant-about__box-subtitle">Restaurant</h3>
+          <h1 class="restaurant-about__box-title">
+            Get Restaurant Facilities & Many Other More
+          </h1>
+          <p class="restaurant-about__box-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tem por incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip.
+          </p>
+          <button class="restaurant-about__box-button">Take a Tour</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="facilities-swiper-about">
+      <article class="swiper" id="swiper-facilities">
+        <h5 class="facilities-swiper-about__subtitle">Facilities</h5>
+        <h2 class="facilities-swiper-about__title">Core Features</h2>
+
+        <div class="swiper-wrapper facilities-swiper-about__wrapper">
+          <div class="swiper-slide facilities-swiper-about__wrapper__slide">
+            <span class="facilities-swiper-about__wrapper__slide-number"
+              >01</span
+            >
+            <img
+              src="./public/icons/home/facilities/icon 1.png"
+              alt="icons facilities"
+              class="facilities-swiper-about__wrapper__slide-img"
+            />
+            <h3 class="facilities-swiper-about__wrapper__slide-title">
+              Have High Rating
+            </h3>
+            <p class="facilities-swiper-about__wrapper__slide-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna..
+            </p>
+          </div>
+          <div class="swiper-slide facilities-swiper-about__wrapper__slide">
+            <span class="facilities-swiper-about__wrapper__slide-number"
+              >02</span
+            >
+            <img
+              src="./public/icons/home/facilities/icon 2.png"
+              alt="icons facilities"
+              class="facilities-swiper-about__wrapper__slide-img"
+            />
+            <h3 class="facilities-swiper-about__wrapper__slide-title">
+              Quiet Hours
+            </h3>
+            <p class="facilities-swiper-about__wrapper__slide-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna..
+            </p>
+          </div>
+          <div class="swiper-slide facilities-swiper-about__wrapper__slide">
+            <span class="facilities-swiper-about__wrapper__slide-number"
+              >03</span
+            >
+            <img
+              src="./public/icons/home/facilities/icon 3.png"
+              alt="icons facilities"
+              class="facilities-swiper-about__wrapper__slide-img"
+            />
+            <h3 class="facilities-swiper-about__wrapper__slide-title">
+              Best Locations
+            </h3>
+            <p class="facilities-swiper-about__wrapper__slide-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna..
+            </p>
+          </div>
+          <div class="swiper-slide facilities-swiper-about__wrapper__slide">
+            <span class="facilities-swiper-about__wrapper__slide-number"
+              >04</span
+            >
+            <img
+              src="./public/icons/home/facilities/icon 4.png"
+              alt="icons facilities"
+              class="facilities-swiper-about__wrapper__slide-img"
+            />
+            <h3 class="facilities-swiper-about__wrapper__slide-title">
+              Free Cancellation
+            </h3>
+            <p class="facilities-swiper-about__wrapper__slide-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna..
+            </p>
+          </div>
+          <div class="swiper-slide facilities-swiper-about__wrapper__slide">
+            <span class="facilities-swiper-about__wrapper__slide-number"
+              >05</span
+            >
+            <img
+              src="./public/icons/home/facilities/icon 5.png"
+              alt="icons facilities"
+              class="facilities-swiper-about__wrapper__slide-img"
+            />
+            <h3 class="facilities-swiper-about__wrapper__slide-title">
+              Payment Options
+            </h3>
+            <p class="facilities-swiper-about__wrapper__slide-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna..
+            </p>
+          </div>
+          <div class="swiper-slide facilities-swiper-about__wrapper__slide">
+            <span class="facilities-swiper-about__wrapper__slide-number"
+              >06</span
+            >
+            <img
+              src="./public/icons/home/facilities/icon 6.png"
+              alt="icons facilities"
+              class="facilities-swiper-about__wrapper__slide-img"
+            />
+            <h3 class="facilities-swiper-about__wrapper__slide-title">
+              Special Offers
+            </h3>
+            <p class="facilities-swiper-about__wrapper__slide-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna..
+            </p>
+          </div>
+        </div>
+        <div
+          class="swiper-pagination facilities-swiper-about__pagination"
+        ></div>
+      </article>
+    </section>
+
+    <section class="counter-about">
+      <div class="counter-about__text">
+        <h3 class="counter-about__text-subtitle">Counter</h3>
+        <h1 class="counter-about__text-title">Some Fun Facts</h1>
+      </div>
+
+      <div class="counter-about__box">
+        <img src="" alt="" />
+        <div class="counter-about__box-text">
+          <h2>8000</h2>
+          <span>Happy Users</span>
+        </div>
+        <img src="" alt="" />
+      </div>
+
+      <div class="counter-about__box">
+        <img src="" alt="" />
+        <div class="counter-about__box-text">
+          <h2>10M</h2>
+          <span>Reviews & Appriciate</span>
+        </div>
+        <img src="" alt="" />
+      </div>
+
+      <div class="counter-about__box">
+        <img src="" alt="" />
+        <div class="counter-about__box-text">
+          <h2>100</h2>
+          <span>Country Coverage</span>
+        </div>
+        <img src="" alt="" />
+      </div>
+
+      <article class="swiper">
+        <div class="swiper-wrapper"></div>
+        <div class="swiper-slide">
+          <img src="" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="" alt="" />
+        </div>
+        <div class="swiper-pagination"></div>
+      </article>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
