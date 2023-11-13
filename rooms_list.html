@@ -67,7 +67,7 @@
       </div>
     </section>
 
-    <section class="card-rooms">
+    <section class="card-rooms" id="cardRoomsSection">
       <article class="card-rooms__box">
         <img
           class="card-rooms__box__image"
@@ -128,5 +128,95 @@
         </div>
       </article>
     </section>
+
+    <section class="pagination">
+      <div class="pagination__rooms">
+        <button class="pagination__rooms__move" id="previous">
+          <img src="./public/icons/rooms/arrow-prev.svg" alt="" />
+        </button>
+        <button class="pagination__rooms__page" id="page1">1</button>
+        <button class="pagination__rooms__page" id="page2">2</button>
+        <button class="pagination__rooms__page" id="page3">3</button>
+        <button class="pagination__rooms__page" id="page4">...</button>
+        <button class="pagination__rooms__move" id="next">
+          <img src="./public/icons/rooms/arrow-next.svg" alt="" />
+        </button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__box">
+        <article class="footer__box__intro">
+          <div class="footer__box__intro__text">
+            <h1 class="footer__box__intro__text-letter">H</h1>
+            <h2 class="footer__box__intro__text-title">
+              Hotel <span>Miranda</span>
+            </h2>
+          </div>
+          <p class="footer__box__intro__text-paragraph">
+            Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing
+            eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
+          </p>
+          <div class="footer__box__intro-social">
+            <img src="./public/icons/footer/facebook-logo-24.png" alt="" />
+            <img src="./public/icons/footer/twitter-logo-24.png" alt="" />
+            <img src="./public/icons/footer/behance-logo-24.png" alt="" />
+            <img src="./public/icons/footer/linkedin-logo-24.png" alt="" />
+            <img src="./public/icons/footer/youtube-logo-24.png" alt="" />
+          </div>
+        </article>
+
+        <article class="footer__box__services">
+          <h3 class="footer__box__services-title">Services.</h3>
+          <div class="footer__box__services__container">
+            <ul class="footer__box__services__container-list">
+              <li>+ Restaurant & Bar</li>
+              <li>+ Swimming Pool</li>
+              <li>+ Wellness & Spa</li>
+              <li>+ Restaurant</li>
+              <li>+ Conference Room</li>
+              <li>+ Coctail Party House</li>
+            </ul>
+            <ul class="footer__box__services__container-list">
+              <li>+ Gaming Zone</li>
+              <li>+ Marrige Party</li>
+              <li>+ Party Planning</li>
+              <li>+ Tour Consultancy</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="footer__box__contact">
+          <h3 class="footer__box__contact-title">Contact Us.</h3>
+          <div class="footer__box__contact__box">
+            <img src="./public/icons/footer/contact/icon tfno.png" alt="" />
+            <div class="footer__box__contact__box-info">
+              <h6>Phone Number</h6>
+              <p>+987 876 765 76 577</p>
+            </div>
+          </div>
+          <div class="footer__box__contact__box">
+            <img src="./public/icons/footer/contact/icon email.png" alt="" />
+            <div class="footer__box__contact__box-info">
+              <h6>Email</h6>
+              <p>hotelmiranda@.es</p>
+            </div>
+          </div>
+          <div class="footer__box__contact__box">
+            <img src="./public/icons/footer/contact/icon location.png" alt="" />
+            <div class="footer__box__contact__box-info">
+              <h6>Hotel Address</h6>
+              <p>+987 876 765 76 577</p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="footer__copyright">
+        <p>Copyright By@Example - 2020</p>
+        <p>Terms of use | Privacy Environmental Policy</p>
+      </div>
+    </footer>
+    <script type="module" src="./scripts/pagination.js"></script>
   </body>
 </html>

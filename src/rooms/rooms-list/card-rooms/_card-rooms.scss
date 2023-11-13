@@ -17,7 +17,6 @@
     }
 
     &__text {
-      position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -51,6 +50,7 @@
         color: #777;
         text-align: center;
         font-family: $third-font;
+
         font-size: 0.9rem;
         font-style: normal;
         font-weight: 400;
@@ -82,6 +82,126 @@
         border: none;
         background-color: transparent;
         cursor: pointer;
+      }
+    }
+  }
+}
+
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &__rooms {
+    margin-top: 2.5em;
+    width: 100%;
+    max-width: 25em;
+    display: flex;
+    justify-content: space-evenly;
+
+    &__move {
+      padding: 0.5em 0.8em;
+      border: none;
+      fill: white;
+      background: none;
+      cursor: pointer;
+    }
+    &__page {
+      padding: 0.5em 0.8em;
+      border: none;
+      color: black;
+      background: none;
+    }
+  }
+}
+.active-page {
+  background-color: #bead8e;
+  color: #fff;
+}
+
+@media screen and (min-width: 765px) {
+  .card-rooms__box {
+    display: flex;
+    flex-direction: row;
+    &__image {
+      width: 40%;
+    }
+    &__text {
+      margin-top: 2em;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      width: 40%;
+      padding-left: 1em;
+      &__icons {
+        width: 80%;
+      }
+
+      &__title {
+        text-align: start;
+        width: auto;
+      }
+      &__paragraph {
+        width: 13.5em;
+        text-align: start;
+      }
+    }
+    &__box-price {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &__price {
+        text-align: start;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .card-rooms {
+    width: auto;
+    padding: 7em 8em 0em 8em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    &__box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 370px;
+      margin-top: 3em;
+      text-align: center;
+      
+      &__image {
+        width: 23em;
+        height: auto;
+      }
+      
+      &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-left: 0px;
+
+        &__icons {
+          margin-top: -2.5em;
+        }
+
+        &__paragraph {
+          text-align: center;
+          width: 90%;
+        }
+      }
+      &__box-price {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
       }
     }
   }
