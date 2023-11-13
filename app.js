@@ -76,6 +76,9 @@ const swiperMenuPhotos = new Swiper ("#menu-photos",{
   },
 })
 
+
+
+
 const swiperAboutCounter = new Swiper("#swiper-about", {
   slidesPerView: 1,
   spaceBetween: 30,
