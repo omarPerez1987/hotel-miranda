@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const articleToDuplicate = document.querySelector(".card-rooms__box");
+  const articleToDuplicate = document.getElementById("cardRoomsSectionBox");
   const cardRoomsSection = document.getElementById("cardRoomsSection");
 
   let itemsPerPage = 6;
