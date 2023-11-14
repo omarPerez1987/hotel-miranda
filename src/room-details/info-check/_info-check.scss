@@ -1,0 +1,124 @@
+.info-check {
+  width: 100%;
+  padding: 3em 0em;
+  &__container {
+    margin: 0 auto;
+    width: 90%;
+    &__text-and-img {
+      &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 0.5em;
+        &__subtitle {
+          color: #777;
+          font-family: $secondary-font;
+          font-size: 0.9rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 2.8px;
+          text-transform: uppercase;
+        }
+        &__title {
+          color: #222;
+          font-family: $primary-font;
+          font-size: 2.5rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 48px;
+          letter-spacing: -1.44px;
+        }
+        &__price {
+          color: #bead8e;
+          text-align: right;
+          font-family: $secondary-font;
+          font-size: 2rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+        &__price span {
+          color: #bead8e;
+          font-family: $secondary-font;
+          font-size: 0.8rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 43px;
+        }
+      }
+      &__image {
+        width: 100%;
+        max-width: 48em;
+      }
+      &__image img {
+        width: 100%;
+      }
+    }
+    &__check {
+      margin-top: 3em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__title {
+        color: #222;
+        text-align: right;
+        font-family: $secondary-font;
+        font-size: 1.1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.54px;
+      }
+      &__form {
+          width: 70%;
+          max-width: 23.4em;
+          padding: 1em;
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          &__label {
+          margin-top: 1em;
+          width: 80%;
+          color: #222;
+          text-align: right;
+          font-family: $secondary-font;
+          font-size: 0.9rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          text-align: start;
+        }
+        &__input {
+          width: 80%;
+          margin-top: 0.5em;
+          padding: 0em 1.8em;
+          height: 3.7em;
+          background: #f8f8f8;
+          border: none;
+        }
+        &__button {
+          margin-top: 1.2em;
+          width: 100%;
+          max-width: 24.2em;
+          height: 3.7em;
+          background: #bead8e;
+          color: #fff;
+          font-family: $secondary-font;
+          font-size: 0.9rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: 2.8px;
+          text-transform: uppercase;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+    &__paragraph {
+        margin-top: 1.5em;
+        max-width: 43.2em;
+    }
+  }
+}

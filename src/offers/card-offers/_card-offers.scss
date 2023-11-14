@@ -1,0 +1,141 @@
+.card-offers {
+  width: 100%;
+  &__container {
+    padding-top: 3em;
+    padding-bottom: 1em;
+    width: 100%;
+    &__box-image {
+      width: 90%;
+      margin: 0 auto;
+      &__image {
+        position: relative;
+        width: 100%;
+        height: 162px;
+        object-fit: cover;
+      }
+    }
+    &__box-title {
+      &__subtitle {
+        color: #777;
+        font-family: Archivo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 2.8px;
+        text-transform: uppercase;
+      }
+      &__title {
+        color: #222;
+        font-family: Old Standard TT;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 48px;
+        letter-spacing: -1.44px;
+      }
+    }
+    &__box-price {
+      position: absolute;
+      top: 30em;
+      right: 3em;
+      width: 8.7em;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+
+      &__strikethrough {
+        display: flex;
+        align-items: baseline;
+        justify-content: end;
+        & h5 {
+          color: #bead8e;
+          text-align: right;
+          font-family: Archivo;
+          font-size: 23px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          text-decoration-line: line-through;
+        }
+        & span {
+          color: #bead8e;
+          font-family: Archivo;
+          font-size: 11px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          text-decoration-line: line-through;
+        }
+      }
+      &__offer {
+        color: #de5777;
+        text-align: right;
+        font-family: Archivo;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        & span {
+          color: #de5777;
+          font-family: Archivo;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+      }
+    }
+    &__description {
+      &__paragraph {
+        width: 90%;
+        color: #777;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+    &__box-list {
+      width: 90%;
+
+      &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        &__items {
+          &__icons {
+            width: 16px;
+            height: 16px;
+          }
+          &__text {
+            color: #777;
+            font-family: Roboto;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
+      }
+    }
+    &__box-button {
+      &__button {
+        width: 216px;
+        height: 60px;
+        background: #bdac8d;
+        color: #fff;
+        font-family: Archivo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 2.8px;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
