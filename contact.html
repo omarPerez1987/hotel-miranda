@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800;900&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://png.pngtree.com/element_our/png_detail/20181207/creative-hotel-icon-background-png_263993.jpg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Hotel Miranda</title>
+  </head>
+
+  <body>
+    <section class="header-section">
+      <header class="header">
+        <div class="header__left">
+          <button class="header__left__menu">
+            <i class="bx bx-menu"></i>
+          </button>
+          <a href="./index.html" class="header__left__logo">
+            <h1 class="header__left__logo__H">H</h1>
+            <h1 class="header__left__logo__name">Hotel Miranda</h1>
+          </a>
+        </div>
+
+        <navbar class="navbar__list" id="navbar" style="display: none">
+          <a href="./about.html" class="navbar__list__links">About Us</a>
+          <a href="./rooms-grid.html" class="navbar__list__links">Rooms</a>
+          <a href="offers.html" class="navbar__list__links">Offers</a>
+          <a href="details.html" class="navbar__list__links">Contact</a>
+        </navbar>
+
+        <div class="header__icons">
+          <img
+            src="./public/icons/header/user.png"
+            class="header__icons__icon"
+          />
+          <img
+            src="./public/icons/header/search.png"
+            class="header__icons__icon"
+          />
+        </div>
+      </header>
+    </section>
+
+    <section class="main-offers">
+      <h3 class="main-offers__subtitle">THE ULTIMATE LUXURY</h3>
+      <h1 class="main-offers__title">New Details</h1>
+      <img
+        class="main-about-img"
+        src="./public/images/contact/pexels-adrien-olichon-2387793.jpg"
+        alt=""
+      />
+      <div class="main-offers__box">
+        <p class="main-offers__box__home" href="">Home | <span>Blog</span></p>
+      </div>
+    </section>
+
+    <section class="contact-info">
+      <article class="contact-info__box">
+        <img
+          class="contact-info__box__number"
+          src="./public/icons/contact/01.png"
+          alt=""
+        />
+        <div class="contact-info__box__data">
+          <img
+            class="contact-info__box__data__icon"
+            src="./public/icons/footer/contact/icon location.png"
+            alt=""
+          />
+          <div class="contact-info__box__data__flex">
+            <h6 class="contact-info__box__data__flex__text">Hotel Address</h6>
+            <p class="contact-info__box__data__flex__description">
+              19/A, Cirikon City hall Tower New York, NYC
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="contact-info__box">
+        <img
+          class="contact-info__box__number"
+          src="./public/icons/contact/02.png"
+          alt=""
+        />
+        <div class="contact-info__box__data">
+          <img
+            class="contact-info__box__data__icon"
+            src="./public/icons/footer/contact/icon tfno.png"
+            alt=""
+          />
+          <div class="contact-info__box__data__flex">
+            <h6 class="contact-info__box__data__flex__text">Phone Number</h6>
+            <p class="contact-info__box__data__flex__description">
+              + 97656 8675 7864 7 <br />
+              + 876 766 8675 765 6
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="contact-info__box">
+        <img
+          class="contact-info__box__number"
+          src="./public/icons/contact/03.png"
+          alt=""
+        />
+        <div class="contact-info__box__data">
+          <img
+            class="contact-info__box__data__icon"
+            src="./public/icons/footer/contact/icon email.png"
+            alt=""
+          />
+          <div class="contact-info__box__data__flex">
+            <h6 class="contact-info__box__data__flex__text">Email</h6>
+            <p class="contact-info__box__data__flex__description">
+              info@webmail.com <br />
+              jobs.webmail@mail.com
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="form-contact">
+        <form class="form-contact__form" action="">
+            <label class="form-contact__form__box">
+                <img class="form-contact__form__box__img" src="./public/icons/contact/form/user.svg" alt="icon user" />
+                <input class="form-contact__form__box__input" placeholder="Your full name" type="text" />
+            </label>
+            <label class="form-contact__form__box">
+                <img class="form-contact__form__box__img" src="./public/icons/contact/form/phone.svg" alt="icon telephone" />
+                <input class="form-contact__form__box__input" placeholder="Add phone number" type="number" />
+            </label>
+            <label class="form-contact__form__box">
+                <img class="form-contact__form__box__img" src="./public/icons/contact/form/email.svg" alt="icon email" />
+                <input class="form-contact__form__box__input" placeholder="Enter email address" type="email" />
+            </label>
+            <label class="form-contact__form__box">
+                <img class="form-contact__form__box__img" src="./public/icons/contact/form/subject.svg" alt="icon subject" />
+                <input class="form-contact__form__box__input" class="form-contact__form_input" placeholder="Enter subject" type="text" />
+            </label>
+            <label class="form-contact__form__boxarea">
+                <img class="form-contact__form__boxarea__image" src="./public/icons/contact/form/message.svg" alt="icon pen" />
+                <textarea class="form-contact__form__boxarea__textarea" placeholder="Enter message"></textarea>
+            </label>
+            <div class="form-contact__form__box__button">
+                <button class="form-contact__form__box__button__submit" type="submit">SEND</button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__box">
+        <article class="footer__box__intro">
+          <div class="footer__box__intro__text">
+            <h1 class="footer__box__intro__text-letter">H</h1>
+            <h2 class="footer__box__intro__text-title">
+              Hotel <span>Miranda</span>
+            </h2>
+          </div>
+          <p class="footer__box__intro__text-paragraph">
+            Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing
+            eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
+          </p>
+          <div class="footer__box__intro-social">
+            <img src="./public/icons/footer/facebook-logo-24.png" alt="" />
+            <img src="./public/icons/footer/twitter-logo-24.png" alt="" />
+            <img src="./public/icons/footer/behance-logo-24.png" alt="" />
+            <img src="./public/icons/footer/linkedin-logo-24.png" alt="" />
+            <img src="./public/icons/footer/youtube-logo-24.png" alt="" />
+          </div>
+        </article>
+
+        <article class="footer__box__services">
+          <h3 class="footer__box__services-title">Services.</h3>
+          <div class="footer__box__services__container">
+            <ul class="footer__box__services__container-list">
+              <li>+ Restaurant & Bar</li>
+              <li>+ Swimming Pool</li>
+              <li>+ Wellness & Spa</li>
+              <li>+ Restaurant</li>
+              <li>+ Conference Room</li>
+              <li>+ Coctail Party House</li>
+            </ul>
+            <ul class="footer__box__services__container-list">
+              <li>+ Gaming Zone</li>
+              <li>+ Marrige Party</li>
+              <li>+ Party Planning</li>
+              <li>+ Tour Consultancy</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="footer__box__contact">
+          <h3 class="footer__box__contact-title">Contact Us.</h3>
+          <div class="footer__box__contact__box">
+            <img src="./public/icons/footer/contact/icon tfno.png" alt="" />
+            <div class="footer__box__contact__box-info">
+              <h6>Phone Number</h6>
+              <p>+987 876 765 76 577</p>
+            </div>
+          </div>
+          <div class="footer__box__contact__box">
+            <img src="./public/icons/footer/contact/icon email.png" alt="" />
+            <div class="footer__box__contact__box-info">
+              <h6>Email</h6>
+              <p>hotelmiranda@.es</p>
+            </div>
+          </div>
+          <div class="footer__box__contact__box">
+            <img src="./public/icons/footer/contact/icon location.png" alt="" />
+            <div class="footer__box__contact__box-info">
+              <h6>Hotel Address</h6>
+              <p>+987 876 765 76 577</p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="footer__copyright">
+        <p>Copyright By@Example - 2020</p>
+        <p>Terms of use | Privacy Environmental Policy</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="./scripts/swipers.js"></script>
+  </body>
+</html>
