@@ -1,16 +1,14 @@
 .card-offers {
   width: 100%;
-}
-.card-offers__container {
   padding-top: 3em;
   padding-bottom: 1em;
   width: 100%;
 }
-.card-offers__container__box-image {
+.card-offers__box-image {
   width: 90%;
   margin: 0 auto;
 }
-.card-offers__container__box-image__image {
+.card-offers__box-image__image {
   position: relative;
   width: 100%;
   height: 162px;

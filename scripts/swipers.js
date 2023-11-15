@@ -99,7 +99,7 @@ const swiperRelatedRooms = new Swiper("#swiperRelatedRooms", {
   },
   breakpoints: {
     1000: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 30,
       grid: {
         fill: "row",
@@ -108,5 +108,34 @@ const swiperRelatedRooms = new Swiper("#swiperRelatedRooms", {
     },
   },
   mousewheel: true,
+  keyboard: true,
+});
+
+
+const swiperOffers = new Swiper("#swiperOffers", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  navigation: {
+    prevEl: ".popular-rooms__swiper__scroll__button-prev",
+    nextEl: ".popular-rooms__swiper__scroll__button-next",
+  },
+  breakpoints: {
+    700: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      grid: {
+        fill: "row",
+        rows: 1,
+      },
+    },
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      grid: {
+        fill: "row",
+        rows: 1,
+      },
+    },
+  },
   keyboard: true,
 });

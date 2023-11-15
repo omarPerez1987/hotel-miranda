@@ -1,24 +1,34 @@
 .card-offers {
   width: 100%;
-  &__container {
-    padding-top: 3em;
-    padding-bottom: 1em;
-    width: 100%;
-    &__box-image {
-      width: 90%;
-      margin: 0 auto;
-      &__image {
-        position: relative;
-        width: 100%;
-        height: 162px;
-        object-fit: cover;
-      }
+  padding-top: 3em;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.10);
+
+  &__box-image {
+    width: 90%;
+    margin: 0 auto;
+    &__image {
+      z-index: 0;
+      position: relative;
+      width: 100%;
+      height: 162px;
+      object-fit: cover;
     }
+  }
+  &__container {
+    margin-top: 1em;
+    width: 90%;
+    padding-left: 1.2em;
+
     &__box-title {
       &__subtitle {
         color: #777;
-        font-family: Archivo;
-        font-size: 14px;
+        font-family: $secondary-font;
+        font-size: 0.9rem;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -26,9 +36,10 @@
         text-transform: uppercase;
       }
       &__title {
+        margin-top: 0.3em;
         color: #222;
-        font-family: Old Standard TT;
-        font-size: 40px;
+        font-family: $primary-font;
+        font-size: 2.5rem;
         font-style: normal;
         font-weight: 400;
         line-height: 48px;
@@ -36,13 +47,13 @@
       }
     }
     &__box-price {
-      position: absolute;
-      top: 30em;
-      right: 3em;
-      width: 8.7em;
+      position: relative;
+      z-index: 1;
+      top: -160px;
+      width: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: start;
+      justify-content: end;
 
       &__strikethrough {
         display: flex;
@@ -51,8 +62,8 @@
         & h5 {
           color: #bead8e;
           text-align: right;
-          font-family: Archivo;
-          font-size: 23px;
+          font-family: $secondary-font;
+          font-size: 1.4rem;
           font-style: normal;
           font-weight: 700;
           line-height: normal;
@@ -60,8 +71,8 @@
         }
         & span {
           color: #bead8e;
-          font-family: Archivo;
-          font-size: 11px;
+          font-family: $secondary-font;
+          font-size: 0.7rem;
           font-style: normal;
           font-weight: 700;
           line-height: normal;
@@ -71,16 +82,16 @@
       &__offer {
         color: #de5777;
         text-align: right;
-        font-family: Archivo;
-        font-size: 30px;
+        font-family: $secondary-font;
+        font-size: 1.8rem;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
 
         & span {
           color: #de5777;
-          font-family: Archivo;
-          font-size: 12px;
+          font-family: $secondary-font;
+          font-size: 0.7rem;
           font-style: normal;
           font-weight: 700;
           line-height: normal;
@@ -88,31 +99,38 @@
       }
     }
     &__description {
+      margin-top: 1em;
       &__paragraph {
         width: 90%;
         color: #777;
-        font-family: Roboto;
-        font-size: 14px;
+        font-family: $third-font;
+        font-size: 0.9rem;
         font-style: normal;
         font-weight: 400;
         line-height: 24px;
       }
     }
     &__box-list {
-      width: 90%;
+      width: 100%;
+      margin-top: 1.5em;
 
       &__list {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        
         &__items {
+          display: flex;
+          gap: 0.5em;
+    
           &__icons {
-            width: 16px;
-            height: 16px;
+            width: 1rem;
+            height: 1rem;
           }
           &__text {
             color: #777;
-            font-family: Roboto;
-            font-size: 15px;
+            font-family: $third-font;
+            font-size: 0.9rem;
             font-style: normal;
             font-weight: 500;
             line-height: normal;
@@ -121,13 +139,15 @@
       }
     }
     &__box-button {
+      margin-top: 1.5em;
+
       &__button {
-        width: 216px;
-        height: 60px;
+        width: 13.5em;
+        height: 3.7em;
         background: #bdac8d;
         color: #fff;
-        font-family: Archivo;
-        font-size: 14px;
+        font-family: $secondary-font;
+        font-size: 0.9rem;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
