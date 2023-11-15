@@ -2535,8 +2535,9 @@ ul {
 }
 
 .card-offers {
-  width: 100%;
-  padding-top: 3em;
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 3em;
   padding-bottom: 1em;
   margin-bottom: 2em;
   display: flex;
@@ -2545,7 +2546,7 @@ ul {
   box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1);
 }
 .card-offers__box-image {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 .card-offers__box-image__image {
@@ -2572,6 +2573,7 @@ ul {
   text-transform: uppercase;
 }
 .card-offers__container__box-title__title {
+  width: 80%;
   margin-top: 0.3em;
   color: #222;
   font-family: "Old Standard TT", serif;
@@ -2584,8 +2586,8 @@ ul {
 .card-offers__container__box-price {
   position: relative;
   z-index: 1;
-  top: -160px;
-  width: 100%;
+  top: -210px;
+  width: 93%;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -2632,7 +2634,7 @@ ul {
   line-height: normal;
 }
 .card-offers__container__description {
-  margin-top: 1em;
+  margin-top: -2.5em;
 }
 .card-offers__container__description__paragraph {
   width: 90%;
