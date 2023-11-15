@@ -1,0 +1,59 @@
+.header {
+  font-family: $secondary-font;
+  max-width: 100%;
+  padding: 0 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5em;
+  box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.438);
+
+  &__left {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+
+    &__logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+      height: 2.25em;
+      width: 6.57em;
+    }
+    &__logo__H {
+      padding: 0.3em 0.5em;
+      color: #111;
+      font-size: 1.2em;
+      font-style: normal;
+      font-weight: 700;
+      background: #fff;
+      text-align: center;
+      box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.25);
+    }
+
+    &__logo__name {
+      color: #111;
+      font-size: 0.5em;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 2.6px;
+      text-transform: uppercase;
+    }
+
+    &__menu {
+      width: 3em;
+      height: 2em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      border: none;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    gap: 1.5em;
+  }
+}
