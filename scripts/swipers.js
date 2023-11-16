@@ -18,7 +18,6 @@ const swiper = new Swiper("#mySwiper", {
 const swiperFacilities = new Swiper("#swiper-facilities", {
   slidesPerView: 1,
   spaceBetween: 30,
-  loop: true,
   pagination: {
     el: ".swiper-pagination",
   },
@@ -37,7 +36,6 @@ const swiperFacilities = new Swiper("#swiper-facilities", {
 const swiperMenu = new Swiper("#swiperMenu", {
   slidesPerView: 1,
   spaceBetween: 16,
-  loop: true,
   grid: {
     fill: "row",
     rows: 3,
@@ -64,7 +62,7 @@ const swiperMenuPhotos = new Swiper("#menu-photos", {
   loop: true,
 
   pagination: {
-    el: ".menu-photos__pagination",
+    el: ".menu__photos__pagination",
   },
   breakpoints: {
     1000: {
@@ -79,7 +77,7 @@ const swiperAboutCounter = new Swiper("#swiper-about", {
   spaceBetween: 30,
   loop: true,
   pagination: {
-    el: ".counter-about-swiper__pagination",
+    el: ".counter-about__swiper__pagination",
     clickable: true,
   },
   breakpoints: {

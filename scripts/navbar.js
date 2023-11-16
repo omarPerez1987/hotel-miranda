@@ -2,7 +2,12 @@ const menu = document.getElementById("btnMenu");
 const frame = document.getElementById("btnFrame");
 const navbar = document.getElementById("navbar");
 
-navbar.style.display = "none";
+if (window.innerWidth > 1000) {
+  navbar.style.display = "static";
+} else {
+  navbar.style.display = "none";
+}
+
 btnFrame.style.display = "none";
 
 const showMenu = () => {

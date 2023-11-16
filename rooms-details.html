@@ -26,32 +26,40 @@
     <title>Hotel Miranda</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header__left">
-        <button class="header__left__menu">
-          <i class="bx bx-menu"></i>
-        </button>
-        <a href="./index.html" class="header__left__logo">
-          <h1 class="header__left__logo__H">H</h1>
-          <h1 class="header__left__logo__name">Hotel Miranda</h1>
-        </a>
-      </div>
+    <section class="header-box">
+      <header class="header-box__header">
+        <div class="header-box__header__left">
+          <button class="header-box__header__left__menu">
+            <img src="./public/icons/navbar/menu.svg" alt="" id="btnMenu" />
+            <img src="./public/icons/navbar/frame.svg" alt="" id="btnFrame" />
+          </button>
+          <a href="./index.html" class="header-box__header__left__logo">
+            <h1 class="header-box__header__left__logo__H">H</h1>
+            <h1 class="header-box__header__left__logo__name">Hotel Miranda</h1>
+          </a>
+        </div>
 
-      <navbar class="navbar__list" id="navbar" style="display: none">
-        <a href="./about.html" class="navbar__list__links">About Us</a>
-        <a href="./related-rooms.html" class="navbar__list__links">Rooms</a>
-        <a href="offers.html" class="navbar__list__links">Offers</a>
-        <a href="details.html" class="navbar__list__links">Contact</a>
-      </navbar>
+        <nav class="navbar" id="navbar">
+          <a href="./about.html" class="navbar__links">About Us</a>
+          <a href="./rooms-grid.html" class="navbar__links">Rooms</a>
+          <a href="./offers.html" class="navbar__links">Offers</a>
+          <a href="./contact.html" class="navbar__links">Contact</a>
+        </nav>
 
-      <div class="header__icons">
-        <img src="./public/icons/header/user.png" class="header__icons__icon" />
-        <img
-          src="./public/icons/header/search.png"
-          class="header__icons__icon"
-        />
-      </div>
-    </header>
+        <div class="header-box__header__icons">
+          <img
+            src="./public/icons/header/user.png"
+            class="header-box__header__icons__icon"
+          />
+          <img
+            src="./public/icons/header/search.png"
+            class="header-box__header__icons__icon"
+          />
+        </div>
+      </header>
+    </section>
+
+    
     <section class="main-rooms-details">
       <h3 class="main-rooms-details__subtitle">THE ULTIMATE LUXURY</h3>
       <h1 class="main-rooms-details__title">Ultimate Room</h1>
@@ -418,12 +426,12 @@
       <div class="footer__box">
         <article class="footer__box__intro">
           <div class="footer__box__intro__text">
-            <h1 class="footer__box__intro__text-letter">H</h1>
-            <h2 class="footer__box__intro__text-title">
+            <h1 class="footer__box__intro__text__letter">H</h1>
+            <h2 class="footer__box__intro__text__title">
               Hotel <span>Miranda</span>
             </h2>
           </div>
-          <p class="footer__box__intro__text-paragraph">
+          <p class="footer__box__intro__text__paragraph">
             Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing
             eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
@@ -438,9 +446,9 @@
         </article>
 
         <article class="footer__box__services">
-          <h3 class="footer__box__services-title">Services.</h3>
+          <h3 class="footer__box__services__title">Services.</h3>
           <div class="footer__box__services__container">
-            <ul class="footer__box__services__container-list">
+            <ul class="footer__box__services__container__list">
               <li>+ Restaurant & Bar</li>
               <li>+ Swimming Pool</li>
               <li>+ Wellness & Spa</li>
@@ -448,7 +456,7 @@
               <li>+ Conference Room</li>
               <li>+ Coctail Party House</li>
             </ul>
-            <ul class="footer__box__services__container-list">
+            <ul class="footer__box__services__container__list">
               <li>+ Gaming Zone</li>
               <li>+ Marrige Party</li>
               <li>+ Party Planning</li>
@@ -458,24 +466,24 @@
         </article>
 
         <article class="footer__box__contact">
-          <h3 class="footer__box__contact-title">Contact Us.</h3>
+          <h3 class="footer__box__contact__title">Contact Us.</h3>
           <div class="footer__box__contact__box">
             <img src="./public/icons/footer/contact/icon tfno.png" alt="" />
-            <div class="footer__box__contact__box-info">
+            <div class="footer__box__contact__box__info">
               <h6>Phone Number</h6>
               <p>+987 876 765 76 577</p>
             </div>
           </div>
           <div class="footer__box__contact__box">
             <img src="./public/icons/footer/contact/icon email.png" alt="" />
-            <div class="footer__box__contact__box-info">
+            <div class="footer__box__contact__box__info">
               <h6>Email</h6>
               <p>hotelmiranda@.es</p>
             </div>
           </div>
           <div class="footer__box__contact__box">
             <img src="./public/icons/footer/contact/icon location.png" alt="" />
-            <div class="footer__box__contact__box-info">
+            <div class="footer__box__contact__box__info">
               <h6>Hotel Address</h6>
               <p>+987 876 765 76 577</p>
             </div>
@@ -487,7 +495,9 @@
         <p>Terms of use | Privacy Environmental Policy</p>
       </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="./scripts/navbar.js"></script>
     <script type="module" src="./scripts/swipers.js"></script>
   </body>
 </html>

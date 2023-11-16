@@ -27,54 +27,55 @@
   </head>
 
   <body>
-    <section class="header-section">
-      <header class="header">
-        <div class="header__left">
-          <button class="header__left__menu">
-            <i class="bx bx-menu"></i>
+    <section class="header-box">
+      <header class="header-box__header">
+        <div class="header-box__header__left">
+          <button class="header-box__header__left__menu">
+            <img src="./public/icons/navbar/menu.svg" alt="" id="btnMenu" />
+            <img src="./public/icons/navbar/frame.svg" alt="" id="btnFrame" />
           </button>
-          <a href="./index.html" class="header__left__logo">
-            <h1 class="header__left__logo__H">H</h1>
-            <h1 class="header__left__logo__name">Hotel Miranda</h1>
+          <a href="./index.html" class="header-box__header__left__logo">
+            <h1 class="header-box__header__left__logo__H">H</h1>
+            <h1 class="header-box__header__left__logo__name">Hotel Miranda</h1>
           </a>
         </div>
 
-        <navbar class="navbar__list" id="navbar" style="display: none">
-          <a href="./about.html" class="navbar__list__links">About Us</a>
-          <a href="rooms.html" class="navbar__list__links">Rooms</a>
-          <a href="offers.html" class="navbar__list__links">Offers</a>
-          <a href="details.html" class="navbar__list__links">Contact</a>
-        </navbar>
+        <nav class="navbar" id="navbar">
+          <a href="./about.html" class="navbar__links">About Us</a>
+          <a href="./rooms-grid.html" class="navbar__links">Rooms</a>
+          <a href="./offers.html" class="navbar__links">Offers</a>
+          <a href="./contact.html" class="navbar__links">Contact</a>
+        </nav>
 
         <div class="header__icons">
           <img
             src="./public/icons/header/user.png"
-            class="header__icons__icon"
+            class="header-box__header__icons__icon"
           />
           <img
             src="./public/icons/header/search.png"
-            class="header__icons__icon"
+            class="header-box__header__icons__icon"
           />
         </div>
       </header>
     </section>
 
     <section class="main-about">
-      <h3 class="main-about-subtitle">THE ULTIMATE LUXURY</h3>
-      <h1 class="main-about-title">About Us</h1>
+      <h3 class="main-about__subtitle">THE ULTIMATE LUXURY</h3>
+      <h1 class="main-about__title">About Us</h1>
       <img
-        class="main-about-img"
+        class="main-about__img"
         src="./public/images/about/pexels-mikhail-nilov-7820327.jpg"
         alt=""
       />
-      <div class="main-about-box">
-        <p class="main-about-box__home" href="">Home | <span>About</span></p>
+      <div class="main-about__box">
+        <p class="main-about__box__home" href="">Home | <span>About</span></p>
       </div>
     </section>
 
     <section class="intro-about">
       <iframe
-        class="intro-about-iframe"
+        class="intro-about__iframe"
         width="1170"
         height="650"
         src="https://www.youtube.com/embed/QDTf_shOqF4"
@@ -83,32 +84,33 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-      <h4 class="intro-about-text">
+      <h4 class="intro-about__text">
         Hello. Our hotel has been present for over 20 years. We make the best
         for all our customers.
       </h4>
-      <article class="intro-about-box">
-        <div class="intro-about-box__icons">
+      <article class="intro-about__box">
+        <div class="intro-about__box__icons">
           <img src="./public/icons/about/breakfast.svg" alt="" />
           <p>Breakfast</p>
         </div>
-        <div class="intro-about-box__icons icon-airport">
+        <div class="intro-about__box__icons icon-airport">
           <img src="./public/icons/about/airport.png" alt="" />
           <p>Airport Pickup</p>
         </div>
-        <div class="intro-about-box__icons">
+        <div class="intro-about__box__icons">
           <img src="./public/icons/about/city.svg" alt="" />
           <p>City Guide</p>
         </div>
-        <div class="intro-about-box__icons icon-bbq">
+        <div class="intro-about__box__icons icon-bbq">
           <img src="./public/icons/about/bbq.svg" alt="" />
           <p>BBQ Party</p>
         </div>
-        <div class="intro-about-box__icons">
+        <div class="intro-about__box__icons">
           <img src="./public/icons/about/room.svg" alt="" />
           <p>Luxury Room</p>
         </div>
       </article>
+
       <article class="restaurant-about">
         <img
           class="restaurant-about__image"
@@ -116,17 +118,17 @@
           alt=""
         />
         <div class="restaurant-about__box">
-          <h3 class="restaurant-about__box-subtitle">Restaurant</h3>
-          <h1 class="restaurant-about__box-title">
+          <h3 class="restaurant-about__box__subtitle">Restaurant</h3>
+          <h1 class="restaurant-about__box__title">
             Get Restaurant Facilities & Many Other More
           </h1>
-          <p class="restaurant-about__box-text">
+          <p class="restaurant-about__box__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tem por incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip.
           </p>
-          <button class="restaurant-about__box-button">Take a Tour</button>
+          <button class="restaurant-about__box__button">Take a Tour</button>
         </div>
       </article>
     </section>
@@ -138,103 +140,103 @@
 
         <div class="swiper-wrapper facilities-swiper-about__wrapper">
           <div class="swiper-slide facilities-swiper-about__wrapper__slide">
-            <span class="facilities-swiper-about__wrapper__slide-number"
+            <span class="facilities-swiper-about__wrapper__slide__number"
               >01</span
             >
             <img
               src="./public/icons/home/facilities/icon 1.png"
               alt="icons facilities"
-              class="facilities-swiper-about__wrapper__slide-img"
+              class="facilities-swiper-about__wrapper__slide__img"
             />
-            <h3 class="facilities-swiper-about__wrapper__slide-title">
+            <h3 class="facilities-swiper-about__wrapper__slide__title">
               Have High Rating
             </h3>
-            <p class="facilities-swiper-about__wrapper__slide-text">
+            <p class="facilities-swiper-about__wrapper__slide__text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna..
             </p>
           </div>
           <div class="swiper-slide facilities-swiper-about__wrapper__slide">
-            <span class="facilities-swiper-about__wrapper__slide-number"
+            <span class="facilities-swiper-about__wrapper__slide__number"
               >02</span
             >
             <img
               src="./public/icons/home/facilities/icon 2.png"
               alt="icons facilities"
-              class="facilities-swiper-about__wrapper__slide-img"
+              class="facilities-swiper-about__wrapper__slide__img"
             />
-            <h3 class="facilities-swiper-about__wrapper__slide-title">
+            <h3 class="facilities-swiper-about__wrapper__slide__title">
               Quiet Hours
             </h3>
-            <p class="facilities-swiper-about__wrapper__slide-text">
+            <p class="facilities-swiper-about__wrapper__slide__text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna..
             </p>
           </div>
           <div class="swiper-slide facilities-swiper-about__wrapper__slide">
-            <span class="facilities-swiper-about__wrapper__slide-number"
+            <span class="facilities-swiper-about__wrapper__slide__number"
               >03</span
             >
             <img
               src="./public/icons/home/facilities/icon 3.png"
               alt="icons facilities"
-              class="facilities-swiper-about__wrapper__slide-img"
+              class="facilities-swiper-about__wrapper__slide__img"
             />
-            <h3 class="facilities-swiper-about__wrapper__slide-title">
+            <h3 class="facilities-swiper-about__wrapper__slide__title">
               Best Locations
             </h3>
-            <p class="facilities-swiper-about__wrapper__slide-text">
+            <p class="facilities-swiper-about__wrapper__slide__text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna..
             </p>
           </div>
           <div class="swiper-slide facilities-swiper-about__wrapper__slide">
-            <span class="facilities-swiper-about__wrapper__slide-number"
+            <span class="facilities-swiper-about__wrapper__slide__number"
               >04</span
             >
             <img
               src="./public/icons/home/facilities/icon 4.png"
               alt="icons facilities"
-              class="facilities-swiper-about__wrapper__slide-img"
+              class="facilities-swiper-about__wrapper__slide__img"
             />
-            <h3 class="facilities-swiper-about__wrapper__slide-title">
+            <h3 class="facilities-swiper-about__wrapper__slide__title">
               Free Cancellation
             </h3>
-            <p class="facilities-swiper-about__wrapper__slide-text">
+            <p class="facilities-swiper-about__wrapper__slide__text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna..
             </p>
           </div>
           <div class="swiper-slide facilities-swiper-about__wrapper__slide">
-            <span class="facilities-swiper-about__wrapper__slide-number"
+            <span class="facilities-swiper-about__wrapper__slide__number"
               >05</span
             >
             <img
               src="./public/icons/home/facilities/icon 5.png"
               alt="icons facilities"
-              class="facilities-swiper-about__wrapper__slide-img"
+              class="facilities-swiper-about__wrapper__slide__img"
             />
-            <h3 class="facilities-swiper-about__wrapper__slide-title">
+            <h3 class="facilities-swiper-about__wrapper__slide__title">
               Payment Options
             </h3>
-            <p class="facilities-swiper-about__wrapper__slide-text">
+            <p class="facilities-swiper-about__wrapper__slide__text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna..
             </p>
           </div>
           <div class="swiper-slide facilities-swiper-about__wrapper__slide">
-            <span class="facilities-swiper-about__wrapper__slide-number"
+            <span class="facilities-swiper-about__wrapper__slide__number"
               >06</span
             >
             <img
               src="./public/icons/home/facilities/icon 6.png"
               alt="icons facilities"
-              class="facilities-swiper-about__wrapper__slide-img"
+              class="facilities-swiper-about__wrapper__slide__img"
             />
-            <h3 class="facilities-swiper-about__wrapper__slide-title">
+            <h3 class="facilities-swiper-about__wrapper__slide__title">
               Special Offers
             </h3>
-            <p class="facilities-swiper-about__wrapper__slide-text">
+            <p class="facilities-swiper-about__wrapper__slide__text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna..
             </p>
@@ -248,13 +250,13 @@
 
     <section class="counter-about">
       <div class="counter-about__text">
-        <h3 class="counter-about__text-subtitle">Counter</h3>
-        <h1 class="counter-about__text-title">Some Fun Facts</h1>
+        <h3 class="counter-about__text__subtitle">Counter</h3>
+        <h1 class="counter-about__text__title">Some Fun Facts</h1>
       </div>
 
       <div class="counter-about__box">
         <img src="./public/icons/about/counter/8000.svg" alt="" />
-        <div class="counter-about__box-text">
+        <div class="counter-about__box__text">
           <h2>8000</h2>
           <span>Happy Users</span>
         </div>
@@ -263,7 +265,7 @@
 
       <div class="counter-about__box">
         <img src="./public/icons/about/counter/10M.svg" alt="" />
-        <div class="counter-about__box-text">
+        <div class="counter-about__box__text">
           <h2>10M</h2>
           <span>Reviews & Appriciate</span>
         </div>
@@ -272,29 +274,29 @@
 
       <div class="counter-about__box">
         <img src="./public/icons/about/counter/10M.svg" alt="" />
-        <div class="counter-about__box-text">
+        <div class="counter-about__box__text">
           <h2>100</h2>
           <span>Country Coverage</span>
         </div>
         <img src="./public/icons/about/counter/arrow.svg" alt="" />
       </div>
 
-      <article class="swiper counter-about-swiper" id="swiper-about">
-        <div class="swiper-wrapper counter-about-swiper__wrapper">
-          <div class="swiper-slide counter-about-swiper__slide">
+      <article class="swiper counter-about__swiper" id="swiper-about">
+        <div class="swiper-wrapper counter-about__swiper__wrapper">
+          <div class="swiper-slide counter-about__swiper__slide">
             <img
               src="./public/images/about/counter/pexels-aditya-agarwal-1477310.jpg"
               alt=""
             />
           </div>
-          <div class="swiper-slide counter-about-swiper__slide">
+          <div class="swiper-slide counter-about__swiper__slide">
             <img
               src="./public/images/about/counter/pexels-oleksandr-p-2166608.jpg"
               alt=""
             />
           </div>
         </div>
-        <div class="swiper-pagination counter-about-swiper__pagination"></div>
+        <div class="swiper-pagination counter-about__swiper__pagination"></div>
       </article>
     </section>
 
@@ -302,12 +304,12 @@
       <div class="footer__box">
         <article class="footer__box__intro">
           <div class="footer__box__intro__text">
-            <h1 class="footer__box__intro__text-letter">H</h1>
-            <h2 class="footer__box__intro__text-title">
+            <h1 class="footer__box__intro__text__letter">H</h1>
+            <h2 class="footer__box__intro__text__title">
               Hotel <span>Miranda</span>
             </h2>
           </div>
-          <p class="footer__box__intro__text-paragraph">
+          <p class="footer__box__intro__text__paragraph">
             Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing
             eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
@@ -322,9 +324,9 @@
         </article>
 
         <article class="footer__box__services">
-          <h3 class="footer__box__services-title">Services.</h3>
+          <h3 class="footer__box__services__title">Services.</h3>
           <div class="footer__box__services__container">
-            <ul class="footer__box__services__container-list">
+            <ul class="footer__box__services__container__list">
               <li>+ Restaurant & Bar</li>
               <li>+ Swimming Pool</li>
               <li>+ Wellness & Spa</li>
@@ -332,7 +334,7 @@
               <li>+ Conference Room</li>
               <li>+ Coctail Party House</li>
             </ul>
-            <ul class="footer__box__services__container-list">
+            <ul class="footer__box__services__container__list">
               <li>+ Gaming Zone</li>
               <li>+ Marrige Party</li>
               <li>+ Party Planning</li>
@@ -342,24 +344,24 @@
         </article>
 
         <article class="footer__box__contact">
-          <h3 class="footer__box__contact-title">Contact Us.</h3>
+          <h3 class="footer__box__contact__title">Contact Us.</h3>
           <div class="footer__box__contact__box">
             <img src="./public/icons/footer/contact/icon tfno.png" alt="" />
-            <div class="footer__box__contact__box-info">
+            <div class="footer__box__contact__box__info">
               <h6>Phone Number</h6>
               <p>+987 876 765 76 577</p>
             </div>
           </div>
           <div class="footer__box__contact__box">
             <img src="./public/icons/footer/contact/icon email.png" alt="" />
-            <div class="footer__box__contact__box-info">
+            <div class="footer__box__contact__box__info">
               <h6>Email</h6>
               <p>hotelmiranda@.es</p>
             </div>
           </div>
           <div class="footer__box__contact__box">
             <img src="./public/icons/footer/contact/icon location.png" alt="" />
-            <div class="footer__box__contact__box-info">
+            <div class="footer__box__contact__box__info">
               <h6>Hotel Address</h6>
               <p>+987 876 765 76 577</p>
             </div>
@@ -373,6 +375,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="./scripts/navbar.js"></script>
     <script type="module" src="./scripts/swipers.js"></script>
   </body>
 </html>
