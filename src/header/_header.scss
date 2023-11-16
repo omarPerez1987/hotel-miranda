@@ -3,6 +3,7 @@
     display: none;
   }
   &__header {
+    z-index: 99;
     background: #fff;
     font-family: $secondary-font;
     width: 100%;

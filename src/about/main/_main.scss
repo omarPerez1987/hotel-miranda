@@ -71,3 +71,25 @@
     }
   }
 }
+
+@media screen and (min-width: 1000px) {
+  .main-about {
+    height: 21em;
+    &__img {
+      height: 100%;
+    }
+    &__subtitle {
+      margin-top: 10em;
+      margin-left: 15%;
+    }
+    &__title {
+      margin-top: 0.7em;
+      margin-left: 3.7em;
+      font-size: 72px;
+    }
+    &__box {
+      margin-right: 13%;
+      padding: 0em 1em;
+    }
+  }
+}
