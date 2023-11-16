@@ -373,6 +373,7 @@ ul {
   font-size: 0.87rem;
   font-style: normal;
   font-weight: 400;
+  max-width: 28em;
 }
 .about__container__text__button {
   width: 13.5em;
@@ -472,6 +473,7 @@ ul {
 
 @media screen and (min-width: 1000px) {
   .about {
+    margin: 7em 0em;
     flex-direction: row;
     align-items: center;
     justify-content: end;
@@ -479,16 +481,63 @@ ul {
   .about__container {
     width: 55%;
     background: #f9f9f9;
-    border: 1px solid red;
     order: 3;
+    z-index: 0;
+    margin-top: 10em;
+  }
+  .about__container__subtitle {
+    width: auto;
+    margin-top: -4em;
+    margin-left: 15%;
+  }
+  .about__container__text {
+    margin-left: 15%;
+    width: auto;
+  }
+  .about__container__text__title {
+    color: #111;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 90px;
+    letter-spacing: -2.4px;
+    width: auto;
+  }
+  .about__container__text__paragraph {
+    width: auto;
   }
   .about__team {
     order: 1;
     width: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: -7em;
+  }
+  .about__team__text {
+    background: #FFF;
+    padding: 0;
+    padding: 3em 0em;
+    width: 16.8em;
+    margin-bottom: 1em;
+    box-shadow: 0px 8px 16px 0px rgba(34, 34, 34, 0.02);
   }
   .about__luxury {
+    z-index: 1;
     order: 2;
     width: auto;
+    margin-top: -2em;
+    margin-right: -5%;
+    margin-left: 2em;
+  }
+  .about__luxury__text {
+    padding: 0;
+    padding: 2em 0em;
+    width: 16.8em;
+    margin-top: 1em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__container__text__title {
+    font-size: 5.5rem;
   }
 }
 .rooms {
@@ -629,7 +678,31 @@ ul {
 
 @media only screen and (min-width: 1000px) {
   .rooms-swiper__wrapper__slide {
-    width: 48.1em;
+    width: auto;
+  }
+  .rooms__info {
+    flex-direction: row;
+    width: auto;
+    text-align: start;
+    padding: 0em 2em;
+    max-width: 30em;
+  }
+  .rooms__info__text {
+    width: 100%;
+  }
+  .rooms__swiper__button-prev {
+    margin-left: 25%;
+  }
+  .rooms__swiper__button-next {
+    margin-right: 25%;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .rooms__swiper__button-prev {
+    margin-left: 28%;
+  }
+  .rooms__swiper__button-next {
+    margin-right: 28%;
   }
 }
 .intro-video {
@@ -644,7 +717,7 @@ ul {
 .intro-video__box {
   width: 90%;
 }
-.intro-video__box__subtitle {
+.intro-video__box__text__subtitle {
   color: #bdac8d;
   font-family: "Archivo", sans-serif;
   font-size: 0.8rem;
@@ -653,7 +726,7 @@ ul {
   text-transform: uppercase;
   margin-bottom: 2em;
 }
-.intro-video__box__title {
+.intro-video__box__text__title {
   color: #fff;
   font-family: "Old Standard TT", serif;
   font-size: 3.5rem;
@@ -663,7 +736,7 @@ ul {
   letter-spacing: -1.2px;
   margin-bottom: 0.3em;
 }
-.intro-video__box__text {
+.intro-video__box__text__description {
   color: #c2c2c2;
   font-family: "Archivo", sans-serif;
   font-size: 0.9rem;
@@ -671,12 +744,13 @@ ul {
   line-height: 24px;
   margin-bottom: 2em;
 }
-.intro-video__box__frame {
-  height: 270px;
-  width: 100%;
+.intro-video__box__video__frame {
   margin-bottom: 2.2em;
+  height: auto;
+  aspect-ratio: 1/1;
+  width: 100%;
 }
-.intro-video__box__button {
+.intro-video__box__button__button {
   width: 13.5em;
   height: 3.75em;
   flex-shrink: 0;
@@ -691,6 +765,47 @@ ul {
   border: none;
 }
 
+@media only screen and (min-width: 1000px) {
+  .intro-video {
+    padding: 0;
+    background: #ad9d82;
+    display: flex;
+    align-items: start;
+  }
+  .intro-video__box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 700px;
+    width: 70%;
+    background: #222;
+  }
+  .intro-video__box__text {
+    width: 50%;
+  }
+  .intro-video__box__text__title {
+    max-width: 7.7em;
+  }
+  .intro-video__box__text__description {
+    max-width: 34em;
+  }
+  .intro-video__box__video {
+    position: absolute;
+    width: 30%;
+    max-width: 570px;
+    max-height: 460px;
+    right: -10%;
+  }
+  .intro-video__box__video__iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .intro-video__box__button {
+    width: 50%;
+  }
+}
 .facilities-swiper {
   width: 100%;
   position: relative;
@@ -779,14 +894,14 @@ ul {
   position: relative;
   overflow: hidden;
 }
-.menu__icon-certificate {
+.menu__container__icon-certificate {
   position: absolute;
   top: 0;
   right: -2.5rem;
   width: 7.1em;
   height: 7.1em;
 }
-.menu__subtitle {
+.menu__container__subtitle {
   padding-top: 10em;
   color: #777;
   font-family: Archivo;
@@ -799,7 +914,7 @@ ul {
   margin-bottom: 1.5em;
   margin-left: 1.5em;
 }
-.menu__title {
+.menu__container__title {
   color: #222;
   font-family: Old Standard TT;
   font-size: 3.5rem;
@@ -810,28 +925,31 @@ ul {
   margin-bottom: 0.5em;
   margin-left: 0.3em;
 }
-.menu__swiper {
+.menu__container__swiper {
   width: 90%;
   padding-bottom: 6em;
 }
-.menu__swiper__wrapper__slide {
+.menu__container__swiper__wrapper__slide {
   width: 100%;
   display: flex;
   flex-shrink: 0;
 }
-.menu__swiper__wrapper__slide img {
+.menu__container__swiper__wrapper__slide img {
   min-width: 7.5rem;
   height: 7.5rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.menu__swiper__wrapper__slide__box {
+.menu__container__swiper__wrapper__slide__box {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   margin-left: 2em;
 }
-.menu__swiper__wrapper__slide__box h4 {
+.menu__container__swiper__wrapper__slide__box span {
+  display: none;
+}
+.menu__container__swiper__wrapper__slide__box__text h4 {
   color: #222;
   font-family: Old Standard TT;
   font-size: 1.5rem;
@@ -840,7 +958,7 @@ ul {
   line-height: 1.5rem;
   letter-spacing: -0.72px;
 }
-.menu__swiper__wrapper__slide__box p {
+.menu__container__swiper__wrapper__slide__box__text p {
   width: 11.563rem;
   color: #222;
   font-family: Roboto;
@@ -849,7 +967,7 @@ ul {
   font-weight: 400;
   line-height: 1.5rem;
 }
-.menu__swiper__box {
+.menu__container__swiper__box {
   margin-top: 1.5em;
   width: 100%;
   height: 2em;
@@ -857,7 +975,7 @@ ul {
   justify-content: end;
   align-items: end;
 }
-.menu__swiper__box-prev {
+.menu__container__swiper__box-prev {
   position: relative;
   left: -2em;
   top: 0em;
@@ -867,12 +985,12 @@ ul {
   background: #f8f8f8;
   cursor: pointer;
 }
-.menu__swiper__box-prev::after {
+.menu__container__swiper__box-prev::after {
   font-size: 0.6rem;
   flex-shrink: 0;
   color: #111111;
 }
-.menu__swiper__box-next {
+.menu__container__swiper__box-next {
   position: relative;
   top: 0em;
   border: none;
@@ -881,7 +999,7 @@ ul {
   background: #bdac8d;
   cursor: pointer;
 }
-.menu__swiper__box-next::after {
+.menu__container__swiper__box-next::after {
   font-size: 0.6rem;
   flex-shrink: 0;
   color: #ffffff;
@@ -902,6 +1020,55 @@ ul {
   margin-bottom: 2em;
 }
 
+@media screen and (min-width: 1000px) {
+  .menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu__container {
+    width: 80%;
+  }
+  .menu__container__icon-certificate {
+    left: 0;
+  }
+  .menu__container__swiper {
+    margin-left: 1em;
+  }
+  .menu__container__swiper__wrapper__slide {
+    width: 30%;
+  }
+  .menu__container__swiper__wrapper__slide img {
+    width: 120px;
+  }
+  .menu__container__swiper__wrapper__slide__box {
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    align-items: center;
+    margin-left: 0em;
+    width: 450px;
+    background: #FFF;
+  }
+  .menu__container__swiper__wrapper__slide__box:hover {
+    filter: invert(30%) contrast(200%);
+  }
+  .menu__container__swiper__wrapper__slide__box span {
+    display: block;
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  .menu__container__swiper__wrapper__slide__box__text {
+    margin-left: 1em;
+    width: 90%;
+  }
+  .menu__container__swiper__wrapper__slide__box__text p {
+    width: 100%;
+  }
+  .menu__photos {
+    width: 80%;
+  }
+}
 .info {
   padding: 3em 0em;
   width: 100%;
@@ -943,6 +1110,20 @@ ul {
   font-weight: 700;
 }
 
+@media only screen and (min-width: 1000px) {
+  .info {
+    margin: 0 auto;
+    width: 80%;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .info__box {
+    text-align: start;
+  }
+  .info__box__title {
+    text-align: start;
+  }
+}
 .main-about {
   width: 100%;
   height: auto;
@@ -2950,6 +3131,23 @@ ul {
   margin-left: 1.2em;
 }
 
+@media screen and (min-width: 1000px) {
+  .footer__box {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5em;
+    width: 80%;
+  }
+  .footer__box__intro__text__paragraph {
+    width: 17em;
+  }
+  .footer__copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 .swiperMinimal {
   padding-bottom: 2em;
   width: 100%;

@@ -156,6 +156,35 @@
 
 @media only screen and (min-width: 1000px) {
   .rooms-swiper__wrapper__slide {
-    width: 48.1em;
+    width: auto;
   }
+
+  .rooms__info {
+    flex-direction: row;
+    width: auto;
+    text-align: start;
+    padding: 0em 2em;
+    max-width: 30em;
+    &__text {
+      width: 100%;
+    }
+  }
+
+  .rooms__swiper__button-prev {
+    margin-left: 25%;
+  }
+  .rooms__swiper__button-next {
+    margin-right: 25%;
+  }
+  
+}
+
+@media only screen and (min-width: 1920px) { 
+  .rooms__swiper__button-prev {
+    margin-left: 28%;
+  }
+  .rooms__swiper__button-next {
+    margin-right: 28%;
+  }
+
 }
