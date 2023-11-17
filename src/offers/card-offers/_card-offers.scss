@@ -161,3 +161,29 @@
     }
   }
 }
+
+@media screen and (min-width: 1000px) {
+  .card-offers {
+    width: 80%;
+    max-width: 1170px;
+    &__box-image {
+      width: 100%;
+      height: auto;
+      &__image {
+        width: 100%;
+        height: 570px;
+        margin-bottom: -5em;
+      }
+    }
+    &__container {
+      padding: 3em;
+      width: 80%;
+      z-index: 1;
+      background: #FFF;
+      border-top: 6px solid #BDAC8D;
+      &__box-price { 
+        top: -70px;
+      }
+    }
+  }
+}

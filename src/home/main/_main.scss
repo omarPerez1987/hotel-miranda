@@ -3,11 +3,11 @@
   height: 33.2em;
   background: url("../../../public/images/home/main/pexels-colon-freld-2373201.jpg")
     no-repeat center center/cover;
+  background: #333;
   padding-left: 1.25em;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-
 
   &__subtitle {
     width: 14.8em;
@@ -67,7 +67,6 @@
   }
 }
 
-
 @media screen and (min-width: 1000px) {
   .main {
     padding-left: 15%;
@@ -78,7 +77,7 @@
       width: 100%;
     }
     &__title {
-      font-size: 7em
+      font-size: 7em;
     }
     &__box {
       flex-direction: row;

@@ -65,3 +65,40 @@
     }
   }
 }
+
+@media screen and (min-width: 1000px) {
+  .intro-about {
+    margin: 0 auto;
+    width: 80%;
+    padding-bottom: 6em;
+
+    &__iframe {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16/9;
+      max-width: 1170px;
+    }
+    &__text {
+      width: 95%;
+      font-size: 4.5rem;
+    }
+    &__box {
+      margin-top: 3em;
+      width: 100%;
+    }
+    .icon-bbq {
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .intro-about {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .intro-about {
+    width: 60%;
+  }
+}

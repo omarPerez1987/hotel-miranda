@@ -23,3 +23,18 @@
     line-height: 24px;
   }
 }
+
+@media screen and (min-width: 1400px) {
+  .cancelation {
+    margin-left: 15%;
+    max-width: 1170px;
+    &__title {
+      margin-left: 1.8em;
+
+    }
+    &__text {
+      margin-left: 3em;
+      width: 40em;
+    }
+  }
+}

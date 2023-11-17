@@ -14,7 +14,7 @@
       margin-bottom: 1em;
       color: #777;
       font-family: Archivo;
-      font-size: 14px;
+      font-size: 0.9rem;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
@@ -28,43 +28,45 @@
       width: 90%;
       color: #222;
       font-family: Old Standard TT;
-      font-size: 56px;
+      font-size: 3.5rem;
       font-style: normal;
       font-weight: 400;
       line-height: 60px;
       letter-spacing: -1.2px;
     }
   }
-  &__box {
-    height: 8.3em;
-    margin-bottom: 1em;
-    width: 90%;
-    display: flex;
-    align-items: center;
-
-    &__text {
-      margin-left: 1em;
-      margin-right: 15%;
-      width: 9.3em;
+  &__container {
+    &__box {
+      height: 8.3em;
+      margin-bottom: 1em;
+      width: 90%;
       display: flex;
-      flex-direction: column;
-    }
-    &__text h2 {
-      color: #222;
-      font-family: Old Standard TT;
-      font-size: 60px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 60px;
-      letter-spacing: -1.8px;
-    }
-    &__text span {
-      color: #777;
-      font-family: Roboto;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 16px;
+      align-items: center;
+
+      &__text {
+        margin-left: 1em;
+        margin-right: 15%;
+        width: 9.3em;
+        display: flex;
+        flex-direction: column;
+      }
+      &__text h2 {
+        color: #222;
+        font-family: Old Standard TT;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 60px;
+        letter-spacing: -1.8px;
+      }
+      &__text span {
+        color: #777;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+      }
     }
   }
 
@@ -87,4 +89,47 @@
 
 .counter-about__swiper__pagination {
   --swiper-pagination-color: #bead8e;
+}
+
+@media only screen and (min-width: 1000px) {
+  .counter-about {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 7em;
+    &__container {
+      width: 95%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__swiper {
+      width: 95%;
+      height: auto;
+      &__slide {
+        width: 570px;
+        height: auto;
+      }
+    } 
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .counter-about {
+    width: 80%;
+    
+    &__container {
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__swiper {
+      width: 80%;
+      height: auto;
+      &__slide {
+        width: 570px;
+        height: auto;
+      }
+    } 
+  }
 }

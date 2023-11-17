@@ -137,3 +137,12 @@
     }
   }
 }
+
+@media screen and (min-width: 1400px) {
+  .related-rooms {
+    justify-content: start;
+    align-items: start;
+    margin-left: 15%;
+    max-width: 1170px;
+  }
+}
