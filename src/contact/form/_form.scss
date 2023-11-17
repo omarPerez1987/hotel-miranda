@@ -7,29 +7,61 @@
     display: flex;
     flex-direction: column;
     gap: 1em;
-    &__box {
+    &__column {
       display: flex;
-      align-items: center;
-      height: 4.1em;
-      background: #f8f8f8;
+      flex-direction: column;
+      gap: 1em;
+      &__box {
+        display: flex;
+        align-items: center;
+        height: 4.1em;
+        background: #f8f8f8;
 
-      &__img {
-        margin-left: 1.2em;
+        &__img {
+          margin-left: 1.2em;
+        }
+        &__input {
+          margin-left: 1em;
+          border: none;
+          width: 100%;
+          height: 100%;
+          background-color: transparent;
+          color: #777;
+          font-family: $third-font;
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
       }
-      &__input {
-        margin-left: 1em;
-        border: none;
-        width: 100%;
-        height: 100%;
-        background-color: transparent;
-        color: #777;
-        font-family: $third-font;
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+    }
+
+    &__flex {
+      &__boxarea {
+        height: 10.9em;
+        background: #f8f8f8;
+        display: flex;
+        align-items: start;
+        padding-top: 1.5em;
+
+        &__image {
+          margin-left: 1.2em;
+        }
+        &__textarea {
+          height: 90%;
+          width: 90%;
+          margin-left: 1em;
+          background-color: transparent;
+          border: none;
+          color: #777;
+          font-family: $third-font;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
       }
-      &__button {
+      &__box-button {
         margin-top: 2em;
         text-align: center;
 
@@ -50,28 +82,22 @@
         }
       }
     }
-    &__boxarea {
-      height: 10.9em;
-      background: #f8f8f8;
-      display: flex;
-      align-items: start;
-      padding-top: 1.5em;
+  }
+}
 
-      &__image {
-        margin-left: 1.2em;
+@media screen and (min-width: 1000px) {
+  .form-contact {
+    &__form {
+      max-width: 60em;
+      &__column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
       }
-      &__textarea {
-        height: 90%;
-        width: 80%;
-        margin-left: 1em;
-        background-color: transparent;
-        border: none;
-        color: #777;
-        font-family: $third-font;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+
+      &__flex {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
       }
     }
   }

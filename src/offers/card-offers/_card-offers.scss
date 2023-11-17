@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.10);
+  box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1);
 
   &__box-image {
     width: 100%;
@@ -25,117 +25,121 @@
     width: 90%;
     padding-left: 1.2em;
 
-    &__box-title {
-      &__subtitle {
-        color: #777;
-        font-family: $secondary-font;
-        font-size: 0.9rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 2.8px;
-        text-transform: uppercase;
+    &__header-card {
+      &__box-title {
+        &__subtitle {
+          color: #777;
+          font-family: $secondary-font;
+          font-size: 0.9rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 2.8px;
+          text-transform: uppercase;
+        }
+        &__title {
+          width: 80%;
+          margin-top: 0.3em;
+          color: #222;
+          font-family: $primary-font;
+          font-size: 2.5rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 48px;
+          letter-spacing: -1.44px;
+        }
       }
-      &__title {
-        width: 80%;
-        margin-top: 0.3em;
-        color: #222;
-        font-family: $primary-font;
-        font-size: 2.5rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 48px;
-        letter-spacing: -1.44px;
-      }
-    }
-    &__box-price {
-      position: relative;
-      z-index: 1;
-      top: -210px;
-      width: 93%;
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
-
-      &__strikethrough {
+      &__box-price {
+        position: relative;
+        z-index: 1;
+        top: -210px;
+        width: 93%;
         display: flex;
-        align-items: baseline;
+        flex-direction: column;
         justify-content: end;
-        & h5 {
-          color: #bead8e;
+
+        &__strikethrough {
+          display: flex;
+          align-items: baseline;
+          justify-content: end;
+          & h5 {
+            color: #bead8e;
+            text-align: right;
+            font-family: $secondary-font;
+            font-size: 1.4rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-decoration-line: line-through;
+          }
+          & span {
+            color: #bead8e;
+            font-family: $secondary-font;
+            font-size: 0.7rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-decoration-line: line-through;
+          }
+        }
+        &__offer {
+          color: #de5777;
           text-align: right;
           font-family: $secondary-font;
-          font-size: 1.4rem;
+          font-size: 1.8rem;
           font-style: normal;
           font-weight: 700;
           line-height: normal;
-          text-decoration-line: line-through;
-        }
-        & span {
-          color: #bead8e;
-          font-family: $secondary-font;
-          font-size: 0.7rem;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
-          text-decoration-line: line-through;
-        }
-      }
-      &__offer {
-        color: #de5777;
-        text-align: right;
-        font-family: $secondary-font;
-        font-size: 1.8rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
 
-        & span {
-          color: #de5777;
-          font-family: $secondary-font;
-          font-size: 0.7rem;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
-        }
-      }
-    }
-    &__description {
-      margin-top: -2.5em;
-      &__paragraph {
-        width: 90%;
-        color: #777;
-        font-family: $third-font;
-        font-size: 0.9rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-      }
-    }
-    &__box-list {
-      width: 100%;
-      margin-top: 1.5em;
-
-      &__list {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1em;
-        
-        &__items {
-          display: flex;
-          gap: 0.5em;
-    
-          &__icons {
-            width: 1rem;
-            height: 1rem;
-          }
-          &__text {
-            color: #777;
-            font-family: $third-font;
-            font-size: 0.9rem;
+          & span {
+            color: #de5777;
+            font-family: $secondary-font;
+            font-size: 0.7rem;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 700;
             line-height: normal;
+          }
+        }
+      }
+    }
+    &__flex {
+      &__description {
+        margin-top: -2.5em;
+        &__paragraph {
+          width: 90%;
+          color: #777;
+          font-family: $third-font;
+          font-size: 0.9rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+        }
+      }
+      &__box-list {
+        width: 100%;
+        margin-top: 1.5em;
+
+        &__list {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1em;
+
+          &__items {
+            display: flex;
+            gap: 0.5em;
+
+            &__icons {
+              width: 1rem;
+              height: 1rem;
+            }
+            &__text {
+              color: #777;
+              font-family: $third-font;
+              font-size: 0.9rem;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+            }
           }
         }
       }
@@ -162,7 +166,7 @@
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
   .card-offers {
     width: 80%;
     max-width: 1170px;
@@ -179,10 +183,33 @@
       padding: 3em;
       width: 80%;
       z-index: 1;
-      background: #FFF;
-      border-top: 6px solid #BDAC8D;
-      &__box-price { 
-        top: -70px;
+      background: #fff;
+      border-top: 6px solid #bdac8d;
+      
+      &__header-card {
+        margin-bottom: -2em;
+        
+        &__box-title {
+          padding-bottom: 2em;
+          border-bottom: 1px solid #ececec;
+        }
+        
+        &__box-price {
+          top: -90px;
+        }
+      }
+      &__flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        
+        &__description {
+          margin-top: 0em;
+          width: 31em;
+        }
+        &__box-list {
+         margin-top: 0;
+        }
       }
     }
   }

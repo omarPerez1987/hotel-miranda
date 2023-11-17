@@ -2703,7 +2703,7 @@ ul {
   width: 90%;
   padding-left: 1.2em;
 }
-.card-offers__container__box-title__subtitle {
+.card-offers__container__header-card__box-title__subtitle {
   color: #777;
   font-family: "Archivo", sans-serif;
   font-size: 0.9rem;
@@ -2713,7 +2713,7 @@ ul {
   letter-spacing: 2.8px;
   text-transform: uppercase;
 }
-.card-offers__container__box-title__title {
+.card-offers__container__header-card__box-title__title {
   width: 80%;
   margin-top: 0.3em;
   color: #222;
@@ -2724,7 +2724,7 @@ ul {
   line-height: 48px;
   letter-spacing: -1.44px;
 }
-.card-offers__container__box-price {
+.card-offers__container__header-card__box-price {
   position: relative;
   z-index: 1;
   top: -210px;
@@ -2733,12 +2733,12 @@ ul {
   flex-direction: column;
   justify-content: end;
 }
-.card-offers__container__box-price__strikethrough {
+.card-offers__container__header-card__box-price__strikethrough {
   display: flex;
   align-items: baseline;
   justify-content: end;
 }
-.card-offers__container__box-price__strikethrough h5 {
+.card-offers__container__header-card__box-price__strikethrough h5 {
   color: #bead8e;
   text-align: right;
   font-family: "Archivo", sans-serif;
@@ -2748,7 +2748,7 @@ ul {
   line-height: normal;
   text-decoration-line: line-through;
 }
-.card-offers__container__box-price__strikethrough span {
+.card-offers__container__header-card__box-price__strikethrough span {
   color: #bead8e;
   font-family: "Archivo", sans-serif;
   font-size: 0.7rem;
@@ -2757,7 +2757,7 @@ ul {
   line-height: normal;
   text-decoration-line: line-through;
 }
-.card-offers__container__box-price__offer {
+.card-offers__container__header-card__box-price__offer {
   color: #de5777;
   text-align: right;
   font-family: "Archivo", sans-serif;
@@ -2766,7 +2766,7 @@ ul {
   font-weight: 700;
   line-height: normal;
 }
-.card-offers__container__box-price__offer span {
+.card-offers__container__header-card__box-price__offer span {
   color: #de5777;
   font-family: "Archivo", sans-serif;
   font-size: 0.7rem;
@@ -2774,10 +2774,10 @@ ul {
   font-weight: 700;
   line-height: normal;
 }
-.card-offers__container__description {
+.card-offers__container__flex__description {
   margin-top: -2.5em;
 }
-.card-offers__container__description__paragraph {
+.card-offers__container__flex__description__paragraph {
   width: 90%;
   color: #777;
   font-family: "Roboto", sans-serif;
@@ -2786,24 +2786,24 @@ ul {
   font-weight: 400;
   line-height: 24px;
 }
-.card-offers__container__box-list {
+.card-offers__container__flex__box-list {
   width: 100%;
   margin-top: 1.5em;
 }
-.card-offers__container__box-list__list {
+.card-offers__container__flex__box-list__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1em;
 }
-.card-offers__container__box-list__list__items {
+.card-offers__container__flex__box-list__list__items {
   display: flex;
   gap: 0.5em;
 }
-.card-offers__container__box-list__list__items__icons {
+.card-offers__container__flex__box-list__list__items__icons {
   width: 1rem;
   height: 1rem;
 }
-.card-offers__container__box-list__list__items__text {
+.card-offers__container__flex__box-list__list__items__text {
   color: #777;
   font-family: "Roboto", sans-serif;
   font-size: 0.9rem;
@@ -2830,7 +2830,7 @@ ul {
   cursor: pointer;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
   .card-offers {
     width: 80%;
     max-width: 1170px;
@@ -2848,11 +2848,30 @@ ul {
     padding: 3em;
     width: 80%;
     z-index: 1;
-    background: #FFF;
-    border-top: 6px solid #BDAC8D;
+    background: #fff;
+    border-top: 6px solid #bdac8d;
   }
-  .card-offers__container__box-price {
-    top: -70px;
+  .card-offers__container__header-card {
+    margin-bottom: -2em;
+  }
+  .card-offers__container__header-card__box-title {
+    padding-bottom: 2em;
+    border-bottom: 1px solid #ececec;
+  }
+  .card-offers__container__header-card__box-price {
+    top: -90px;
+  }
+  .card-offers__container__flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+  .card-offers__container__flex__description {
+    margin-top: 0em;
+    width: 31em;
+  }
+  .card-offers__container__flex__box-list {
+    margin-top: 0;
   }
 }
 .popular-rooms {
@@ -3051,6 +3070,24 @@ ul {
   line-height: normal;
 }
 
+@media screen and (min-width: 768px) {
+  .contact-info {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+  }
+  .contact-info__box {
+    max-width: 25em;
+  }
+}
+@media screen and (min-width: 1130px) {
+  .contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 73em;
+  }
+}
 .form-contact {
   margin-top: 7em;
   width: 100%;
@@ -3062,16 +3099,21 @@ ul {
   flex-direction: column;
   gap: 1em;
 }
-.form-contact__form__box {
+.form-contact__form__column {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.form-contact__form__column__box {
   display: flex;
   align-items: center;
   height: 4.1em;
   background: #f8f8f8;
 }
-.form-contact__form__box__img {
+.form-contact__form__column__box__img {
   margin-left: 1.2em;
 }
-.form-contact__form__box__input {
+.form-contact__form__column__box__input {
   margin-left: 1em;
   border: none;
   width: 100%;
@@ -3084,11 +3126,34 @@ ul {
   font-weight: 400;
   line-height: normal;
 }
-.form-contact__form__box__button {
+.form-contact__form__flex__boxarea {
+  height: 10.9em;
+  background: #f8f8f8;
+  display: flex;
+  align-items: start;
+  padding-top: 1.5em;
+}
+.form-contact__form__flex__boxarea__image {
+  margin-left: 1.2em;
+}
+.form-contact__form__flex__boxarea__textarea {
+  height: 90%;
+  width: 90%;
+  margin-left: 1em;
+  background-color: transparent;
+  border: none;
+  color: #777;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.form-contact__form__flex__box-button {
   margin-top: 2em;
   text-align: center;
 }
-.form-contact__form__box__button__submit {
+.form-contact__form__flex__box-button__submit {
   width: 16.1em;
   height: 3.7em;
   background: #bead8e;
@@ -3103,30 +3168,21 @@ ul {
   text-transform: uppercase;
   border: none;
 }
-.form-contact__form__boxarea {
-  height: 10.9em;
-  background: #f8f8f8;
-  display: flex;
-  align-items: start;
-  padding-top: 1.5em;
-}
-.form-contact__form__boxarea__image {
-  margin-left: 1.2em;
-}
-.form-contact__form__boxarea__textarea {
-  height: 90%;
-  width: 80%;
-  margin-left: 1em;
-  background-color: transparent;
-  border: none;
-  color: #777;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
 
+@media screen and (min-width: 1000px) {
+  .form-contact__form {
+    max-width: 60em;
+  }
+  .form-contact__form__column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .form-contact__form__flex {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}
 .footer {
   display: flex;
   flex-direction: column;

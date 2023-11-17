@@ -22,7 +22,7 @@
       display: flex;
       gap: 1.7em;
       z-index: 1;
-      
+
       &__icon {
         margin-left: 2em;
         width: 2.5em;
@@ -49,5 +49,25 @@
         }
       }
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-info {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    &__box {
+      max-width: 25em;
+    }
+  }
+}
+
+@media screen and (min-width: 1130px) {
+  .contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 73em;
   }
 }
