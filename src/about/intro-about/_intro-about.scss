@@ -39,7 +39,7 @@
       margin: 0 auto;
     }
 
-    &__icons img {
+    &__icons svg {
       width: 3.75em;
       height: 3.75em;
     }
@@ -61,7 +61,13 @@
     }
 
     &__icons:hover {
-      filter: brightness(50%);
+      background-color: #BEAD8E;
+      & svg path {
+        fill: #fff;
+      }
+      & p {
+        color: #fff;
+      }
     }
   }
 }
