@@ -83,6 +83,13 @@
         background-color: transparent;
         cursor: pointer;
       }
+      &__button::before {
+        content: "Booking Now";
+      }
+      &__button:hover::before {
+        content: "Book Now";
+        color: green;
+      }
     }
   }
 }
@@ -136,12 +143,12 @@
       align-items: start;
       width: 50%;
       padding-left: 2em;
-      
+
       &__icons {
         width: 80%;
         max-width: 19em;
       }
-      
+
       &__title {
         text-align: start;
         width: auto;
@@ -159,7 +166,7 @@
       align-items: center;
       width: 20%;
       margin-left: -2em;
-      
+
       &__price {
         text-align: start;
         font-size: 30px;
