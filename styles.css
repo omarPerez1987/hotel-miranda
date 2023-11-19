@@ -106,8 +106,8 @@ ul {
     margin-bottom: -3em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    opacity: 1;
-    transition: opacity 0.5s ease;
+    transform: translateY(0);
+    transition: transform 0.5s ease;
   }
   .header-box__header__left__logo__H {
     padding: 0.3em 0.5em;
