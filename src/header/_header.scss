@@ -4,6 +4,7 @@
   }
   &__header {
     z-index: 99;
+    position: fixed;
     background: #fff;
     font-family: $secondary-font;
     width: 100%;
@@ -88,12 +89,15 @@
       line-height: normal;
     }
     &__header {
+      position: static;
       height: auto;
       margin-top: 0.5em;
       width: 85%;
       margin-bottom: -3em;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+      opacity: 1;
+      transition: opacity 0.5s ease;
 
       &__left {
         &__logo__H {

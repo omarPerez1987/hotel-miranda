@@ -20,6 +20,7 @@ ul {
 }
 .header-box__header {
   z-index: 99;
+  position: fixed;
   background: #fff;
   font-family: "Archivo", sans-serif;
   width: 100%;
@@ -98,12 +99,15 @@ ul {
     line-height: normal;
   }
   .header-box__header {
+    position: static;
     height: auto;
     margin-top: 0.5em;
     width: 85%;
     margin-bottom: -3em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    opacity: 1;
+    transition: opacity 0.5s ease;
   }
   .header-box__header__left__logo__H {
     padding: 0.3em 0.5em;
