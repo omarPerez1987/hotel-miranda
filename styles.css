@@ -9,6 +9,7 @@
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul {
@@ -179,7 +180,6 @@ ul {
   max-width: 100%;
   height: 33.2em;
   background: url("../../../public/images/home/main/pexels-colon-freld-2373201.jpg") no-repeat center center/cover;
-  background: #333;
   padding-left: 1.25em;
   display: flex;
   flex-direction: column;
@@ -947,6 +947,7 @@ ul {
   height: 7.5rem;
   -o-object-fit: cover;
      object-fit: cover;
+  aspect-ratio: 1/1;
 }
 .menu__container__swiper__wrapper__slide__box {
   display: flex;
@@ -1023,13 +1024,14 @@ ul {
   width: 100%;
 }
 .menu__photos__slide img {
-  width: 90%;
+  width: auto;
   height: 21em;
   margin-bottom: 2em;
+  aspect-ratio: 1;
 }
 
 .menu__photos__pagination {
-  --swiper-pagination-color: #BEAD8E;
+  --swiper-pagination-color: #bead8e;
 }
 
 @media screen and (min-width: 1000px) {
@@ -1060,15 +1062,10 @@ ul {
     align-items: center;
     margin-left: 0em;
     width: 450px;
-    background: #FFF;
+    background: #fff;
   }
   .menu__container__swiper__wrapper__slide__box:hover {
     filter: invert(30%) contrast(200%);
-  }
-  .menu__container__swiper__wrapper__slide__box span {
-    display: block;
-    font-size: 2rem;
-    font-weight: bolder;
   }
   .menu__container__swiper__wrapper__slide__box__text {
     margin-left: 1em;
@@ -1129,12 +1126,6 @@ ul {
     flex-direction: row;
     justify-content: center;
   }
-  .info__box {
-    text-align: start;
-  }
-  .info__box__title {
-    text-align: start;
-  }
 }
 .main-about {
   width: 100%;
@@ -1177,6 +1168,9 @@ ul {
   letter-spacing: -1.2px;
 }
 .main-about__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: -3em;
   margin-right: 1em;
   z-index: 1;
@@ -1188,8 +1182,6 @@ ul {
   background: #fff;
 }
 .main-about__box__home {
-  margin-top: 1em;
-  margin-left: 1.5em;
   color: #222;
   font-family: "Archivo", sans-serif;
   font-size: 1rem;
@@ -1783,6 +1775,14 @@ ul {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+.rooms-grid__box__box-price__button:hover {
+  color: red;
+}
+.rooms-grid__box:hover {
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.178);
+  transition-duration: 0.8s;
+  transform: scale(1.1);
 }
 
 .pagination {
@@ -2598,6 +2598,13 @@ ul {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+.related-rooms__box__box-price__button::before {
+  content: "Booking Now";
+}
+.related-rooms__box__box-price__button:hover::before {
+  content: "Book Now";
+  color: green;
 }
 .related-rooms__scroll__button-prev {
   margin-top: -7em;

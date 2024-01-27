@@ -104,6 +104,13 @@
         background-color: transparent;
         cursor: pointer;
       }
+      &__button::before {
+        content: "Booking Now";
+      }
+      &__button:hover::before {
+        content: "Book Now";
+        color: green;
+      }
     }
   }
   &__scroll {

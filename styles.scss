@@ -9,6 +9,7 @@
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul {
@@ -34,8 +35,6 @@ $color: #ffffff;
 @import "./src/offers/offers.scss";
 @import "./src/contact/contact.scss";
 @import "./src/footer/footer";
-
-
 
 // COMPONENTS *******************************************
 
