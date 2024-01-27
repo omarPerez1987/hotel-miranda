@@ -1776,8 +1776,12 @@ ul {
   background-color: transparent;
   cursor: pointer;
 }
-.rooms-grid__box__box-price__button:hover {
-  color: red;
+.rooms-grid__box__box-price__button::before {
+  content: "Booking Now";
+}
+.rooms-grid__box__box-price__button:hover::before {
+  content: "Book Now";
+  color: green;
 }
 .rooms-grid__box:hover {
   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.178);
